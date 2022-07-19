@@ -2,112 +2,105 @@
   <div class="" style="padding-top: 60px">
     <div id="navigate">
       <a href="#PROFILE">PROFILE</a>
-      <a href="#SKILL">SKILL</a>
+      <a href="#SKILLS">SKILLS</a>
       <a href="#PORTFOLIO">PORTFOLIO</a>
       <a href="#EXPERIENCE">EXPERIENCE</a>
       <a href="#CONTACT">CONTACT</a>
     </div>
     <a name="PROFILE" />
     <div class="row justify-between">
-      <q-parallax>
+      <q-parallax :height="windowHeight" :speed="1.5">
         <template v-slot:media>
           <img src="nddw0kak6nq41.jpg">
         </template>
-        <template v-slot:content="scope">
-          <div class="absolute column items-center"
-            :style="{
-              opacity: 0.45 + (1 - scope.percentScrolled) * 0.55,
-              top: (scope.percentScrolled * 60) + '%',
-              left: 0,
-              right: 0
-            }"
-          >
-          <div style="width: 70%; border: 1px solid red">
-            <p class="text-h3 text-center text-white">PROFILE</p>
-            <div class="row">
-              <div class="col">
-                <img src="" />
-              </div>
-              <div class="col">
-                <p class="text-body1 text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-              </div>
+        <div style="width: 50%; background-color: rgba(0, 0, 0, 0.2)">
+          <p class="text-h3 text-center text-white">PROFILE</p>
+          <div class="row">
+            <div class="col flex justify-center">
+              <img width="300" src="github-logo.png" />
+            </div>
+            <div class="col">
+              <p class="text-body1 text-white">對程式開發有高度的熱忱，因此我的職能偏向全端工程師也以此做為我的職涯方向，透過不斷的自學，能掌握前端技術 HTML、Javascript / JQuery、CSS及切版技巧，理解如何設計 UI 與用戶互動，後端技術則有 PHP 及 MySQL，理解如何以 CRUD 來操作資料庫，在歷經了不同的工作環境之下，也掌握了 Python 、Vue 及 PostgreSQL 等各項技術，積累了相當豐富的開發經驗。</p>
+              <p class="text-body1 text-white">我對前端及後端都很有興趣，也因此在前後端都有扎實的歷練，也希望能在這兩方面有更深入的發展，在工作中累積不同產業的經驗、學習不同的技術，以面對未來不斷變化的產業趨勢，進一步能將這份經驗帶給團隊、鼓勵團隊並且一起成長。</p>
             </div>
           </div>
-          </div>
-        </template>
+        </div>
       </q-parallax>
     </div>
-    <a name="SKILL" />
+    <a name="SKILLS" />
     <br />
     <div>
-      <h3 class="text-center">SKILL</h3>
+      <h3 class="text-center">SKILLS</h3>
       <div class="flex justify-center">
         <div class="row q-gutter-md q-mb-md" style="width: 70%">
           <q-card class="col" flat bordered>
-            <q-card-section>
-              <div class="text-overline text-orange-9">Overline</div>
-              <div class="text-h5 q-mt-sm q-mb-xs">Title</div>
-              <div class="text-caption text-grey">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </div>
+            <q-card-section class="q-pb-none">
+              <q-list class="text-caption text-grey" dense>
+                <q-item-label class="text-h5 text-center q-my-sm text-orange-9">Front - End</q-item-label>
+                <q-item>Vue.js / Quasar</q-item>
+                <q-item>Cesium / leaflet</q-item>
+                <q-item>Javascript / JQuery / Ramda</q-item>
+                <q-item>CSS3 / SASS / Stylus</q-item>
+                <q-item>Windicss / Bootstrap</q-item>
+                <q-item>HTML5 / SPA / SSR / RWD</q-item>
+              </q-list>
             </q-card-section>
-            <q-card-actions>
-              <q-btn flat color="dark" label="Share" />
-              <q-btn flat color="primary" label="Book" />
-              <q-space />
-              <q-btn color="grey" round flat dense :icon="expanded ? 'keyboard_arrow_up' : 'keyboard_arrow_down'" @click="expanded = !expanded" />
+            <q-card-actions class="flex justify-end q-py-none">
+              <q-btn color="grey" round flat :icon="frontEndExpanded ? 'keyboard_arrow_up' : 'keyboard_arrow_down'" @click="frontEndExpanded = !frontEndExpanded" />
             </q-card-actions>
             <q-slide-transition>
-              <div v-show="expanded">
+              <div v-show="frontEndExpanded">
                 <q-separator />
-                <q-card-section class="text-subitle2">
-                  {{ lorem }}
+                <q-card-section class="text-body2 ">
+                  熟悉網頁切版及 CSS 來設計 UI/UX 並能夠製作出響應式網頁或是套用前端框架來進行開發
                 </q-card-section>
               </div>
             </q-slide-transition>
           </q-card>
           <q-card class="col" flat bordered>
-            <q-card-section>
-              <div class="text-overline text-orange-9">Overline</div>
-              <div class="text-h5 q-mt-sm q-mb-xs">Title</div>
-              <div class="text-caption text-grey">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </div>
+            <q-card-section class="q-pb-none">
+              <q-list class="text-caption text-grey" dense>
+                <q-item-label class="text-h5 text-center q-my-sm text-orange-9">Back - End</q-item-label>
+                <q-item>Python - Flask / FastAPI / Sanic</q-item>
+                <q-item>PHP - CodeIgniter</q-item>
+                <q-item>RESTful API</q-item>
+                <q-item>JWT / OAUTH</q-item>
+                <q-item>numpy / pandas</q-item>
+                <q-item>Beautiful soup 4</q-item>
+              </q-list>
             </q-card-section>
-            <q-card-actions>
-              <q-btn flat color="dark" label="Share" />
-              <q-btn flat color="primary" label="Book" />
-              <q-space />
-              <q-btn color="grey" round flat dense :icon="expanded ? 'keyboard_arrow_up' : 'keyboard_arrow_down'" @click="expanded = !expanded" />
+            <q-card-actions class="flex justify-end q-py-none">
+              <q-btn color="grey" round flat :icon="backEndExpanded ? 'keyboard_arrow_up' : 'keyboard_arrow_down'" @click="backEndExpanded = !backEndExpanded" />
             </q-card-actions>
             <q-slide-transition>
-              <div v-show="expanded">
+              <div v-show="backEndExpanded">
                 <q-separator />
-                <q-card-section class="text-subitle2">
-                  {{ lorem }}
+                <q-card-section class="text-body2 ">
+                  後端採用 Restful API 風格進行開發，權限認證主要使用 JWT
                 </q-card-section>
               </div>
             </q-slide-transition>
           </q-card>
           <q-card class="col" flat bordered>
-            <q-card-section>
-              <div class="text-overline text-orange-9">Overline</div>
-              <div class="text-h5 q-mt-sm q-mb-xs">Title</div>
-              <div class="text-caption text-grey">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </div>
+            <q-card-section class="q-pb-none">
+              <q-list class="text-caption text-grey" dense>
+                <q-item-label class="text-h5 text-center q-my-sm text-orange-9">RDBMS / NoSQL</q-item-label>
+                <q-item>PostgreSQL / PostGIS / TimescaleDB</q-item>
+                <q-item>MySQL</q-item>
+                <q-item>SQLite</q-item>
+                <q-item>Oracle PL/SQL</q-item>
+                <q-item>Redis</q-item>
+                <q-item>Memcached</q-item>
+              </q-list>
             </q-card-section>
-            <q-card-actions>
-              <q-btn flat color="dark" label="Share" />
-              <q-btn flat color="primary" label="Book" />
-              <q-space />
-              <q-btn color="grey" round flat dense :icon="expanded ? 'keyboard_arrow_up' : 'keyboard_arrow_down'" @click="expanded = !expanded" />
+            <q-card-actions class="flex justify-end q-py-none">
+              <q-btn color="grey" round flat :icon="databaseExpanded ? 'keyboard_arrow_up' : 'keyboard_arrow_down'" @click="databaseExpanded = !databaseExpanded" />
             </q-card-actions>
             <q-slide-transition>
-              <div v-show="expanded">
+              <div v-show="databaseExpanded">
                 <q-separator />
-                <q-card-section class="text-subitle2">
-                  {{ lorem }}
+                <q-card-section class="text-body2 ">
+                  在資料庫 Schema 的設計及效能優化有相當經驗，也能夠運用空間資料及時序式資料庫
                 </q-card-section>
               </div>
             </q-slide-transition>
@@ -115,70 +108,70 @@
         </div>
         <div class="row q-gutter-md" style="width: 70%">
           <q-card class="col" flat bordered>
-            <q-card-section>
-              <div class="text-overline text-orange-9">Overline</div>
-              <div class="text-h5 q-mt-sm q-mb-xs">Title</div>
-              <div class="text-caption text-grey">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </div>
+            <q-card-section class="q-pb-none">
+              <q-list class="text-caption text-grey" dense>
+                <q-item-label class="text-h5 text-center q-my-sm text-orange-9">Development Environment</q-item-label>
+                <q-item>Windows</q-item>
+                <q-item>Ubuntu</q-item>
+                <q-item>Docker</q-item>
+                <q-item>VirtualBox</q-item>
+                <q-item>RaspberryPi</q-item>
+              </q-list>
             </q-card-section>
-            <q-card-actions>
-              <q-btn flat color="dark" label="Share" />
-              <q-btn flat color="primary" label="Book" />
-              <q-space />
-              <q-btn color="grey" round flat dense :icon="expanded ? 'keyboard_arrow_up' : 'keyboard_arrow_down'" @click="expanded = !expanded" />
+            <q-card-actions class="flex justify-end q-py-none">
+              <q-btn color="grey" round flat :icon="osExpanded ? 'keyboard_arrow_up' : 'keyboard_arrow_down'" @click="osExpanded = !osExpanded" />
             </q-card-actions>
             <q-slide-transition>
-              <div v-show="expanded">
+              <div v-show="osExpanded">
                 <q-separator />
-                <q-card-section class="text-subitle2">
-                  {{ lorem }}
+                <q-card-section class="text-body2 ">
+                  熟悉各開發環境建置及線上環境部署
                 </q-card-section>
               </div>
             </q-slide-transition>
           </q-card>
           <q-card class="col" flat bordered>
-            <q-card-section>
-              <div class="text-overline text-orange-9">Overline</div>
-              <div class="text-h5 q-mt-sm q-mb-xs">Title</div>
-              <div class="text-caption text-grey">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </div>
+            <q-card-section class="q-pb-none">
+              <q-list class="text-caption text-grey" dense>
+                <q-item-label class="text-h5 text-center q-my-sm text-orange-9">VCS</q-item-label>
+                <q-item>Git</q-item>
+                <q-item>Github</q-item>
+                <q-item>Gitlab</q-item>
+                <q-item>BitBucket</q-item>
+                <q-item>SVN</q-item>
+              </q-list>
             </q-card-section>
-            <q-card-actions>
-              <q-btn flat color="dark" label="Share" />
-              <q-btn flat color="primary" label="Book" />
-              <q-space />
-              <q-btn color="grey" round flat dense :icon="expanded ? 'keyboard_arrow_up' : 'keyboard_arrow_down'" @click="expanded = !expanded" />
+            <q-card-actions class="flex justify-end q-py-none">
+              <q-btn color="grey" round flat :icon="vcsExpanded ? 'keyboard_arrow_up' : 'keyboard_arrow_down'" @click="vcsExpanded = !vcsExpanded" />
             </q-card-actions>
             <q-slide-transition>
-              <div v-show="expanded">
+              <div v-show="vcsExpanded">
                 <q-separator />
-                <q-card-section class="text-subitle2">
-                  {{ lorem }}
+                <q-card-section class="text-body2 ">
+                  瞭解基本 Git 指令並且能理解 Git Flow、Github Flow 及 Gitlab Flow 開發流程並運用在工作中
                 </q-card-section>
               </div>
             </q-slide-transition>
           </q-card>
           <q-card class="col" flat bordered>
-            <q-card-section>
-              <div class="text-overline text-orange-9">Overline</div>
-              <div class="text-h5 q-mt-sm q-mb-xs">Title</div>
-              <div class="text-caption text-grey">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </div>
+            <q-card-section class="q-pb-none">
+              <q-list class="text-caption text-grey" dense>
+                <q-item-label class="text-h5 text-center q-my-sm text-orange-9">Other</q-item-label>
+                <q-item>Nginx</q-item>
+                <q-item>Apache</q-item>
+                <q-item>MQTT</q-item>
+                <q-item>JMeter</q-item>
+                <q-item></q-item>
+              </q-list>
             </q-card-section>
-            <q-card-actions>
-              <q-btn flat color="dark" label="Share" />
-              <q-btn flat color="primary" label="Book" />
-              <q-space />
-              <q-btn color="grey" round flat dense :icon="expanded ? 'keyboard_arrow_up' : 'keyboard_arrow_down'" @click="expanded = !expanded" />
+            <q-card-actions class="flex justify-end q-py-none">
+              <q-btn color="grey" round flat :icon="otherExpanded ? 'keyboard_arrow_up' : 'keyboard_arrow_down'" @click="otherExpanded = !otherExpanded" />
             </q-card-actions>
             <q-slide-transition>
-              <div v-show="expanded">
+              <div v-show="otherExpanded">
                 <q-separator />
-                <q-card-section class="text-subitle2">
-                  {{ lorem }}
+                <q-card-section class="text-body2 ">
+                  工作中常使用的軟體，在操作及設定上能做最適當的配置
                 </q-card-section>
               </div>
             </q-slide-transition>
@@ -194,12 +187,18 @@
         <div class="q-gutter-md" style="width: 70%">
           <q-card>
             <q-card-section horizontal>
-              <q-img class="col-5" src="水利局1.png" />
-              <q-card-section style="width: 100%">
+              <q-card-section class="q-pa-none q-ma-none" style="width: 47%">
+                <q-carousel animated v-model="wrsSlide" arrows navigation infinite style="border-radius: 6px">
+                  <q-carousel-slide :name="1" img-src="水利局1.png" />
+                  <q-carousel-slide :name="2" img-src="水利局2.png" />
+                  <q-carousel-slide :name="3" img-src="水利局3.png" />
+                </q-carousel>
+              </q-card-section>
+              <q-card-section style="width: 63%">
                 <q-list dense class="text-body1">
                   <q-badge class="absolute absolute-top-right text-body2 bg-positive" label="維運中" />
                   <q-item class="text-h6 text-bold flex justify-center">新北水利局雨水下水道水位監測系統</q-item>
-                  <q-separator class="q-my-sm" />
+                  <q-separator class="q-my-xs" />
                   <q-item class="text-bold">專案說明：</q-item>
                   <q-item>提供雨水下水道水位即時監測與資料分析，提升人員效率並即時處理淹水情況</q-item>
                   <q-item>．負責前後端程式設計、資料庫設計、 UI/UX 操作介面設計，與 PM 協同規劃</q-item>
@@ -221,20 +220,27 @@
           </q-card>
           <q-card>
             <q-card-section horizontal>
-              <q-img class="col-5" src="水源局1.png" />
-              <q-card-section style="width: 100%">
+              <q-card-section class="q-pa-none q-ma-none" style="width: 47%">
+                <q-carousel animated v-model="wratbSlide" arrows navigation infinite style="border-radius: 6px">
+                  <q-carousel-slide :name="1" img-src="水源局1.png" />
+                  <q-carousel-slide :name="2" img-src="水源局2.png" />
+                  <q-carousel-slide :name="3" img-src="水源局3.png" />
+                  <q-carousel-slide :name="4" img-src="水源局4.png" />
+                  <q-carousel-slide :name="5" img-src="水源局5.png" />
+                </q-carousel>
+              </q-card-section>
+              <q-card-section style="width: 63%">
                 <q-list dense class="text-body1">
                   <q-badge class="absolute absolute-top-right text-body2 bg-positive" label="維運中" />
                   <q-item class="text-h6 text-bold flex justify-center">新北市水源特定區智慧預報系統</q-item>
-                  <q-separator class="q-my-sm" />
+                  <q-separator class="q-my-xs" />
                   <q-item class="text-bold">專案說明：</q-item>
                   <q-item>提供山區崩塌預測，以避免發生災害時的人員傷亡及週邊設備財物損失</q-item>
                   <q-item>．負責前後端程式設計、資料庫設計、 UI/UX 操作介面設計並支援手機版本操作，與 AI 工程師及 PM 協同合作開發</q-item>
                   <q-item>．前端：ES6、Vue / Quasar、Cesium、Stylus</q-item>
                   <q-item>．後端：Python / Flask、PostgreSQL、Redis、Nginx、Ubuntu</q-item>
                   <q-item class="text-bold">專案特色：</q-item>
-                  <q-item>．各測站即時監測及資料分析</q-item>
-                  <q-item>．各測站預測及資料分析</q-item>
+                  <q-item>．各測站即時觀測、預報及資料分析</q-item>
                   <q-item>．直覺式的崩塌預警</q-item>
                   <q-item>．監測站警戒值圖像化</q-item>
                 </q-list>
@@ -248,21 +254,27 @@
           </q-card>
           <q-card>
             <q-card-section horizontal>
-              <q-img class="col-5" src="高爾夫1.png" />
-              <q-card-section style="width: 100%">
+              <q-card-section class="q-pa-none q-ma-none" style="width: 47%">
+                <q-carousel animated v-model="golfSlide" arrows navigation infinite style="border-radius: 6px">
+                  <q-carousel-slide :name="1" img-src="高爾夫1.png" />
+                  <q-carousel-slide :name="2" img-src="高爾夫1.png" />
+                  <q-carousel-slide :name="3" img-src="高爾夫1.png" />
+                  <q-carousel-slide :name="4" img-src="高爾夫1.png" />
+                  <q-carousel-slide :name="5" img-src="高爾夫1.png" />
+                </q-carousel>
+              </q-card-section>
+              <q-card-section style="width: 63%">
                 <q-list dense class="text-body1">
                   <q-badge class="absolute absolute-top-right text-body2 bg-grey" label="未維運" />
                   <q-item class="text-h6 text-bold flex justify-center">高爾夫球場自駕車派遣系統</q-item>
-                  <q-separator class="q-my-sm" />
+                  <q-separator class="q-my-xs" />
                   <q-item class="text-bold">專案說明：</q-item>
                   <q-item>減少球場雇用人力、自駕車自動化接送</q-item>
                   <q-item>．負責前後端圖台的程式設計、資料庫設計、 UI/UX 操作介面設計、MQTT Broker 及 WebSocket 串接並與合作廠商討論規格</q-item>
                   <q-item>．前端：ES6、Vue / Quasar、Stylus</q-item>
                   <q-item>．後端：Python / Flask、PostgreSQL、MQTT、Ubuntu</q-item>
                   <q-item class="text-bold">專案特色：</q-item>
-                  <q-item>．透過 Web 技術對實體自駕車進行派遣</q-item>
-                  <q-item>．自動規劃最佳路線</q-item>
-                  <q-item>．車機發送 MQTT 資料到 Broker 後轉由 WebSocket 發送到客戶端以逹自駕車即時監控</q-item>
+                  <q-item>．透過 Web 技術對實體自駕車進行派遣並自動規劃最佳路線</q-item>
                   <q-item>．自駕車軌跡檢視、播放功能</q-item>
                   <q-item>．電子圍離系統</q-item>
                 </q-list>
@@ -276,12 +288,17 @@
           </q-card>
           <q-card>
             <q-card-section horizontal>
-              <q-img class="col-5" src="農糧署1.png" />
-              <q-card-section style="width: 100%">
+              <q-card-section class="q-pa-none q-ma-none" style="width: 47%">
+                <q-carousel animated v-model="afaSlide" arrows navigation infinite style="border-radius: 6px">
+                  <q-carousel-slide :name="1" img-src="農糧署1.png" />
+                  <q-carousel-slide :name="2" img-src="農糧署2.png" />
+                </q-carousel>
+              </q-card-section>
+              <q-card-section style="width: 63%">
                 <q-list dense class="text-body1">
                   <q-badge class="absolute absolute-top-right text-body2 bg-positive" label="維運中" />
                   <q-item class="text-h6 text-bold flex justify-center">農糧署農田判釋工作平台</q-item>
-                  <q-separator class="q-my-sm" />
+                  <q-separator class="q-my-xs" />
                   <q-item class="text-bold">專案說明：</q-item>
                   <q-item>利用 AI 辨識所選區域是否有潛在的可耕地</q-item>
                   <q-item>．負責前後端程式設計、資料庫設計、 UI/UX 操作介面設計並與 AI 工程師配合開發</q-item>
@@ -302,17 +319,23 @@
           </q-card>
           <q-card>
             <q-card-section horizontal>
-              <q-img class="col-5" src="消防署1.png" />
-              <q-card-section style="width: 100%">
+              <q-card-section class="q-pa-none q-ma-none" style="width: 47%">
+                <q-carousel animated v-model="nfaSlide" arrows navigation infinite style="border-radius: 6px">
+                  <q-carousel-slide :name="1" img-src="消防署1.png" />
+                  <q-carousel-slide :name="2" img-src="消防署2.png" />
+                  <q-carousel-slide :name="3" img-src="消防署3.png" />
+                </q-carousel>
+              </q-card-section>
+              <q-card-section style="width: 63%">
                 <q-list dense class="text-body1">
                   <q-badge class="absolute absolute-top-right text-body2 bg-positive" label="維運中" />
                   <q-item class="text-h6 text-bold flex justify-center">內政部消防署消防與救災數據分析系統平台</q-item>
-                  <q-separator class="q-my-sm" />
+                  <q-separator class="q-my-xs" />
                   <q-item class="text-bold">專案說明：</q-item>
                   <q-item>蒐集消防相關資料並進行資料清洗，再由 AI 團隊開發示警模組及輿情分析功能</q-item>
                   <q-item>．負責前後端程式設計、資料庫設計、 UI/UX 操作介面設計、資料清洗及壓力測試</q-item>
                   <q-item>．前端：ES6、Vue / Quasar、SASS</q-item>
-                  <q-item>．後端：Python / FastAPI、PostgreSQL、Memcached、Nginx、Ubuntu、Beautiful Soup</q-item>
+                  <q-item>．後端：Python / FastAPI、PostgreSQL、Memcached、Nginx、Beautiful Soup</q-item>
                   <q-item>．QA：JMeter</q-item>
                   <q-item class="text-bold">專案特色：</q-item>
                   <q-item>．視覺化監控爬蟲程式狀態</q-item>
@@ -341,36 +364,67 @@
             subtitle="2019-05 ~ 至今"
             icon="psychology"
           >
-            <div>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </div>
+            <q-list dense class="text-body1">
+              <q-item-label class="text-bold">職稱</q-item-label>
+              <q-item>全端軟體工程師</q-item>
+              <q-item-label class="text-bold">工作內容</q-item-label>
+              <q-item>1．專案開發: 主要工作項目為前後端程式開發，前端的版型設計、切版與 API 串接，後端以 python 做 API 開發、postgresql 資料庫設計、伺服器的維運。專案內容多與 AIoT 有關並與團隊一起合作開發，將收到的 sensor 資料經由 AI 訓練，再將結果展示在 3D / 2D 空間圖台。</q-item>
+              <q-item>2．網路維運: 兼任公司 MIS 工作，負責公司網路故障排除、伺服器維運等等。</q-item>
+              <q-item>3．技術指導: 在 Web 方面有較多的開發經驗，因此在公司內也擔任技術方面的指導者。</q-item>
+              <q-item-label class="text-bold">專案成果</q-item-label>
+              <q-item>1．新北水利局雨水下水道水位監測系統</q-item>
+              <q-item>2．新北市水源特定區崩塌預測系統</q-item>
+              <q-item>3．高爾夫球場自駕車派遣系統</q-item>
+              <q-item>4．農糧署農田判釋工作平台</q-item>
+              <q-item>5．內政部消防署消防與救災數據分析系統平台</q-item>
+              <q-item>6．新北市水土保持申請書件線上無紙化審查及管理系統</q-item>
+              <q-item>7．巨量遙測空間數據AI分析雲端服務平台</q-item>
+              <q-item-label class="text-bold">競賽成果</q-item-label>
+              <q-item>1．2019 亞洲資料創新應用大擂台賽：臺灣研發獎勵獎</q-item>
+              <q-item>2．2020 亞洲資料創新應用大擂台賽：Taiwan區最佳人氣獎第三名</q-item>
+            </q-list>
           </q-timeline-entry>
           <q-timeline-entry
             title="驊訊電子企業股份有限公司"
             subtitle="2017-09 ~ 2018-11"
             icon="memory"
           >
-            <div>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </div>
+            <q-list dense class="text-body1">
+              <q-item-label class="text-bold">職稱</q-item-label>
+              <q-item>Server軟體工程師</q-item>
+              <q-item-label class="text-bold">工作內容</q-item-label>
+              <q-item>1．後台歌曲管理系統開發及維護。</q-item>
+              <q-item>2．開發視覺化營運報表。</q-item>
+            </q-list>
           </q-timeline-entry>
           <q-timeline-entry
             title="新加坡商優達斯國際有限公司"
             subtitle="2014-01 ~ 2017-01"
             icon="shopping_cart"
           >
-            <div>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </div>
+            <q-list dense class="text-body1">
+              <q-item-label class="text-bold">職稱</q-item-label>
+              <q-item>Web工程師</q-item>
+              <q-item-label class="text-bold">工作內容</q-item-label>
+              <q-item>1．開發維護電子商務網站前後台。</q-item>
+              <q-item>2．RESTful api開發。</q-item>
+              <q-item>3．最佳化 SEO。</q-item>
+              <q-item>4．程式效能分析調整。</q-item>
+            </q-list>
           </q-timeline-entry>
           <q-timeline-entry
             title="宇峻奧汀科技股份有限公司"
             subtitle="2012-04 ~ 2013-06"
             icon="sports_esports"
           >
-            <div>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </div>
+            <q-list dense class="text-body1">
+              <q-item-label class="text-bold">職稱</q-item-label>
+              <q-item>Web程式設計</q-item>
+              <q-item-label class="text-bold">工作內容</q-item-label>
+              <q-item>1．開發維護各遊戲官網。</q-item>
+              <q-item>2．網頁遊戲活動開發。</q-item>
+              <q-item>3．技術研究及開發工具。</q-item>
+            </q-list>
           </q-timeline-entry>
         </q-timeline>
       </div>
@@ -399,13 +453,26 @@ export default defineComponent({
     const openLink = (link) => {
       window.open(link)
     }
+    const windowHeight = ref(400)
+
     onMounted(() => {
+      windowHeight.value = (window.innerHeight * 4) / 5
     })
 
     return {
-      openLink,
-      expanded: ref(false),
-      lorem: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+      wrsSlide: ref(1),
+      wratbSlide: ref(1),
+      golfSlide: ref(1),
+      afaSlide: ref(1),
+      nfaSlide: ref(1),
+      frontEndExpanded: ref(false),
+      backEndExpanded: ref(false),
+      databaseExpanded: ref(false),
+      osExpanded: ref(false),
+      vcsExpanded: ref(false),
+      otherExpanded: ref(false),
+      windowHeight,
+      openLink
     }
   }
 })
@@ -433,16 +500,19 @@ export default defineComponent({
     font-size: 20px
     font-weigth: bolder
     text-align: center
+    text-decoration: none
+
+  a:link
+    color: #AAA
+
+  a:visited
+    color: #AAA
 
   a:hover
     color: #000
     background-color: #F5F5F5
 
-  a:visited
-    color: #AAA
-
-  a:link
-    color: #AAA
-    text-decoration: none
+  a:active
+    color: #000
 
 </style>
