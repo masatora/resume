@@ -13,11 +13,11 @@
         <template v-slot:media>
           <img src="nddw0kak6nq41.jpg">
         </template>
-        <div style="width: 50%; height: 350px; background-color: rgba(0, 0, 0, 0.2); border: 1px solid red">
-          <p class="text-h3 text-center text-white">PROFILE</p>
+        <div style="width: 50%; background-color: rgba(0, 0, 0, 0.1); border-radius: 10px">
+          <h3 class="text-bold text-center text-white">PROFILE</h3>
           <div class="row q-px-md">
-            <div class="col-6" style="height: 350px; border: 1px solid red">
-              <img src="github-logo.png" style="width: 512px; height: 512px; object-fit: contain" />
+            <div class="col-6 flex justify-center" style="height: 300px">
+              <img src="github-logo.png" style="max-width: 100%; max-height: 100%" />
             </div>
             <div class="col-6">
               <p class="text-body1 text-white">對程式開發有高度的熱忱，因此我的職能偏向全端工程師也以此做為我的職涯方向，透過不斷的自學，能掌握前端技術 HTML、Javascript / JQuery、CSS及切版技巧，理解如何設計 UI 與用戶互動，後端技術則有 PHP 及 MySQL，理解如何以 CRUD 來操作資料庫，在歷經了不同的工作環境之下，也掌握了 Python 、Vue 及 PostgreSQL 等各項技術，積累了相當豐富的開發經驗。</p>
@@ -30,13 +30,13 @@
     <a name="SKILLS" />
     <br />
     <div>
-      <h3 class="text-center">SKILLS</h3>
-      <div class="flex justify-center">
-        <div class="row q-gutter-md q-mb-md" style="width: 70%">
-          <q-card class="col" flat bordered>
+      <h3 class="text-bold text-center">SKILLS</h3>
+      <div class="row flex justify-center">
+        <div class="col-xs-12 col-sm-10 q-gutter-md q-mb-md">
+          <q-card class="" flat bordered>
             <q-card-section class="q-pb-none">
               <q-list class="text-caption text-grey" dense>
-                <q-item-label class="text-h5 text-center q-my-sm text-orange-9">Front - End</q-item-label>
+                <q-item-label class="text-h6 text-center q-my-sm text-orange-9">Front - End</q-item-label>
                 <q-item>Vue.js / Quasar</q-item>
                 <q-item>Cesium / leaflet</q-item>
                 <q-item>Javascript / JQuery / Ramda</q-item>
@@ -57,10 +57,10 @@
               </div>
             </q-slide-transition>
           </q-card>
-          <q-card class="col" flat bordered>
+          <q-card class="" flat bordered>
             <q-card-section class="q-pb-none">
               <q-list class="text-caption text-grey" dense>
-                <q-item-label class="text-h5 text-center q-my-sm text-orange-9">Back - End</q-item-label>
+                <q-item-label class="text-h6 text-center q-my-sm text-orange-9">Back - End</q-item-label>
                 <q-item>Python - Flask / FastAPI / Sanic</q-item>
                 <q-item>PHP - CodeIgniter</q-item>
                 <q-item>RESTful API</q-item>
@@ -81,10 +81,10 @@
               </div>
             </q-slide-transition>
           </q-card>
-          <q-card class="col" flat bordered>
+          <q-card class="" flat bordered>
             <q-card-section class="q-pb-none">
               <q-list class="text-caption text-grey" dense>
-                <q-item-label class="text-h5 text-center q-my-sm text-orange-9">RDBMS / NoSQL</q-item-label>
+                <q-item-label class="text-h6 text-center q-my-sm text-orange-9">Database</q-item-label>
                 <q-item>PostgreSQL / PostGIS / TimescaleDB</q-item>
                 <q-item>MySQL</q-item>
                 <q-item>SQLite</q-item>
@@ -106,11 +106,11 @@
             </q-slide-transition>
           </q-card>
         </div>
-        <div class="row q-gutter-md" style="width: 70%">
-          <q-card class="col" flat bordered>
+        <div class="col-xs-12 col-sm-10 q-gutter-md">
+          <q-card class="" flat bordered>
             <q-card-section class="q-pb-none">
               <q-list class="text-caption text-grey" dense>
-                <q-item-label class="text-h5 text-center q-my-sm text-orange-9">Development Environment</q-item-label>
+                <q-item-label class="text-h6 text-center q-my-sm text-orange-9">Development Environment</q-item-label>
                 <q-item>Windows</q-item>
                 <q-item>Ubuntu</q-item>
                 <q-item>Docker</q-item>
@@ -130,10 +130,10 @@
               </div>
             </q-slide-transition>
           </q-card>
-          <q-card class="col" flat bordered>
+          <q-card class="" flat bordered>
             <q-card-section class="q-pb-none">
               <q-list class="text-caption text-grey" dense>
-                <q-item-label class="text-h5 text-center q-my-sm text-orange-9">VCS</q-item-label>
+                <q-item-label class="text-h6 text-center q-my-sm text-orange-9">VCS</q-item-label>
                 <q-item>Git</q-item>
                 <q-item>Github</q-item>
                 <q-item>Gitlab</q-item>
@@ -153,10 +153,10 @@
               </div>
             </q-slide-transition>
           </q-card>
-          <q-card class="col" flat bordered>
+          <q-card class="" flat bordered>
             <q-card-section class="q-pb-none">
               <q-list class="text-caption text-grey" dense>
-                <q-item-label class="text-h5 text-center q-my-sm text-orange-9">Other</q-item-label>
+                <q-item-label class="text-h6 text-center q-my-sm text-orange-9">Other</q-item-label>
                 <q-item>Nginx</q-item>
                 <q-item>Apache</q-item>
                 <q-item>MQTT</q-item>
@@ -182,19 +182,19 @@
     <a name="PORTFOLIO" />
     <br />
     <div>
-      <h3 class="text-center">PORTFOLIO</h3>
-      <div class="flex justify-center">
-        <div class="q-gutter-md" style="width: 70%">
+      <h3 class="text-bold text-center">PORTFOLIO</h3>
+      <div class="row flex justify-center">
+        <div class="col-xs-12 col-sm-10 col-md-8 q-gutter-md">
           <q-card>
             <q-card-section horizontal>
-              <q-card-section class="q-pa-none q-ma-none" style="width: 47%">
+              <q-card-section class="q-pa-none q-ma-none" style="width: 40%">
                 <q-carousel animated v-model="wrsSlide" arrows navigation infinite style="border-radius: 6px">
                   <q-carousel-slide :name="1" img-src="水利局1.png" />
                   <q-carousel-slide :name="2" img-src="水利局2.png" />
                   <q-carousel-slide :name="3" img-src="水利局3.png" />
                 </q-carousel>
               </q-card-section>
-              <q-card-section style="width: 63%">
+              <q-card-section style="width: 60%">
                 <q-list dense class="text-body1">
                   <q-badge class="absolute absolute-top-right text-body2 bg-positive" label="維運中" />
                   <q-item class="text-h6 text-bold flex justify-center">新北水利局雨水下水道水位監測系統</q-item>
@@ -222,7 +222,7 @@
           </q-card>
           <q-card>
             <q-card-section horizontal>
-              <q-card-section class="q-pa-none q-ma-none" style="width: 47%">
+              <q-card-section class="q-pa-none q-ma-none" style="width: 40%">
                 <q-carousel animated v-model="wratbSlide" arrows navigation infinite style="border-radius: 6px">
                   <q-carousel-slide :name="1" img-src="水源局1.png" />
                   <q-carousel-slide :name="2" img-src="水源局2.png" />
@@ -232,7 +232,7 @@
                   <q-carousel-slide :name="6" img-src="水源局6.png" />
                 </q-carousel>
               </q-card-section>
-              <q-card-section style="width: 63%">
+              <q-card-section style="width: 60%">
                 <q-list dense class="text-body1">
                   <q-badge class="absolute absolute-top-right text-body2 bg-positive" label="維運中" />
                   <q-item class="text-h6 text-bold flex justify-center">新北市水源特定區智慧預報系統</q-item>
@@ -258,8 +258,13 @@
             </q-card-actions>
           </q-card>
           <q-card>
-            <q-card-section horizontal>
-              <q-card-section class="q-pa-none q-ma-none" style="width: 47%">
+            <q-card-section horizontal v-if="golfVideo">
+              <video style="width: 100%; height: 100%" poster="https://cdn.quasar.dev/img/polina.jpg" autoplay loop muted>
+                <source type="video/mp4" src="高爾夫.mp4">
+              </video>
+            </q-card-section>
+            <q-card-section horizontal v-else>
+              <q-card-section class="q-pa-none q-ma-none" style="width: 40%">
                 <q-carousel animated v-model="golfSlide" arrows navigation infinite style="border-radius: 6px">
                   <q-carousel-slide :name="1" img-src="高爾夫1.png" />
                   <q-carousel-slide :name="2" img-src="高爾夫2.png" />
@@ -268,7 +273,7 @@
                   <q-carousel-slide :name="5" img-src="高爾夫5.png" />
                 </q-carousel>
               </q-card-section>
-              <q-card-section style="width: 63%">
+              <q-card-section style="width: 60%">
                 <q-list dense class="text-body1">
                   <q-badge class="absolute absolute-top-right text-body2 bg-grey" label="未維運" />
                   <q-item class="text-h6 text-bold flex justify-center">高爾夫球場自駕車派遣系統</q-item>
@@ -287,7 +292,7 @@
             </q-card-section>
             <q-separator />
             <q-card-actions class="flex justify-end q-gutter-md">
-              <q-btn color="blue-grey-5" flat round icon="movie" />
+              <q-btn color="blue-grey-5" flat round icon="movie" @click="golfVideo = !golfVideo" />
               <q-btn color="blue-grey-5" flat round icon="public" @click="openLink('https://ysgolf.thinktron.co/')">
                 <q-tooltip>開啟網頁</q-tooltip>
               </q-btn>
@@ -295,13 +300,13 @@
           </q-card>
           <q-card>
             <q-card-section horizontal>
-              <q-card-section class="q-pa-none q-ma-none" style="width: 47%">
+              <q-card-section class="q-pa-none q-ma-none" style="width: 40%">
                 <q-carousel animated v-model="afaSlide" arrows navigation infinite style="border-radius: 6px">
                   <q-carousel-slide :name="1" img-src="農糧署1.png" />
                   <q-carousel-slide :name="2" img-src="農糧署2.png" />
                 </q-carousel>
               </q-card-section>
-              <q-card-section style="width: 63%">
+              <q-card-section style="width: 60%">
                 <q-list dense class="text-body1">
                   <q-badge class="absolute absolute-top-right text-body2 bg-positive" label="維運中" />
                   <q-item class="text-h6 text-bold flex justify-center">農糧署農田判釋工作平台</q-item>
@@ -328,14 +333,14 @@
           </q-card>
           <q-card>
             <q-card-section horizontal>
-              <q-card-section class="q-pa-none q-ma-none" style="width: 47%">
+              <q-card-section class="q-pa-none q-ma-none" style="width: 40%">
                 <q-carousel animated v-model="nfaSlide" arrows navigation infinite style="border-radius: 6px">
                   <q-carousel-slide :name="1" img-src="消防署1.png" />
                   <q-carousel-slide :name="2" img-src="消防署2.png" />
                   <q-carousel-slide :name="3" img-src="消防署3.png" />
                 </q-carousel>
               </q-card-section>
-              <q-card-section style="width: 63%">
+              <q-card-section style="width: 60%">
                 <q-list dense class="text-body1">
                   <q-badge class="absolute absolute-top-right text-body2 bg-positive" label="維運中" />
                   <q-item class="text-h6 text-bold flex justify-center">內政部消防署消防與救災數據分析系統平台</q-item>
@@ -366,9 +371,9 @@
     </div>
     <a name="EXPERIENCE" />
     <br />
-    <div class="flex justify-center">
-      <div class="q-px-lg q-pb-md" style="width: 70%">
-        <h3 class="text-center">EXPERIENCE</h3>
+    <div class="row flex justify-center">
+      <div class="col-xs-12 col-sm-10 col-md-8 q-px-md q-pb-md">
+        <h3 class="text-bold text-center">EXPERIENCE</h3>
         <q-timeline color="secondary">
           <q-timeline-entry
             title="興創知能股份有限公司"
@@ -442,24 +447,41 @@
     </div>
     <a name="CONTACT" />
     <br />
-    <div id="contact">
-      <h3 class="text-center">CONTACT</h3>
-      <div class="flex justify-evenly q-py-xl">
-        <a href="https://github.com/masatora" target="_blank">
-          <q-btn icon="img:github.png" color="blue-grey-5" size="xl" flat round>
-            <q-tooltip>Github: https://github.com/masatora</q-tooltip>
-          </q-btn>
-        </a>
-        <a href="mailto:omadedou@gmail.com">
-          <q-btn icon="email" color="blue-grey-9" size="xl" flat round>
-            <q-tooltip>Email: omadedou@gmail.com</q-tooltip>
-          </q-btn>
-        </a>
-        <a href="tel:+886-987220607">
-          <q-btn icon="phone" color="blue-grey-9" size="xl" flat round>
-            <q-tooltip>Phone: 0987-220-607</q-tooltip>
-          </q-btn>
-        </a>
+    <div id="contact" class="col-12">
+      <h3 class="text-bold text-center">CONTACT</h3>
+      <div class="flex justify-center">
+        <q-list>
+          <q-item>
+            <q-item-section side>
+              <a href="https://github.com/masatora" target="_blank">
+                <q-btn icon="img:github.png" color="blue-grey-5" size="xl" flat round>
+                  <q-tooltip>Github: https://github.com/masatora</q-tooltip>
+                </q-btn>
+              </a>
+            </q-item-section>
+            <q-item-section>Github: https://github.com/masatora</q-item-section>
+          </q-item>
+          <q-item>
+            <q-item-section side>
+              <a href="mailto:omadedou@gmail.com">
+                <q-btn icon="email" color="blue-grey-9" size="xl" flat round>
+                  <q-tooltip>Email: omadedou@gmail.com</q-tooltip>
+                </q-btn>
+              </a>
+            </q-item-section>
+            <q-item-section>Email: omadedou@gmail.com</q-item-section>
+          </q-item>
+          <q-item>
+            <q-item-section side>
+              <a href="tel:+886-987220607">
+                <q-btn icon="phone" color="blue-grey-9" size="xl" flat round>
+                  <q-tooltip>Phone: 0987-220-607</q-tooltip>
+                </q-btn>
+              </a>
+            </q-item-section>
+            <q-item-section>Phone: 0987-220-607</q-item-section>
+          </q-item>
+        </q-list>
       </div>
     </div>
   </div>
@@ -489,6 +511,7 @@ export default defineComponent({
       golfSlide: ref(1),
       afaSlide: ref(1),
       nfaSlide: ref(1),
+      golfVideo: ref(false),
       frontEndExpanded: ref(false),
       backEndExpanded: ref(false),
       databaseExpanded: ref(false),
@@ -540,6 +563,9 @@ export default defineComponent({
     color: #000
 
 #contact
+  .flex
+    padding: 100px 0 620px 0
+
   a
     text-decoration: none
 
