@@ -1,5 +1,5 @@
 <template>
-  <div class="" style="padding-top: 60px">
+  <div style="padding-top: 60px">
     <div id="navigate">
       <a href="#PROFILE">PROFILE</a>
       <a href="#SKILLS">SKILLS</a>
@@ -13,13 +13,13 @@
         <template v-slot:media>
           <img src="nddw0kak6nq41.jpg">
         </template>
-        <div style="width: 50%; background-color: rgba(0, 0, 0, 0.2)">
+        <div style="width: 50%; height: 350px; background-color: rgba(0, 0, 0, 0.2); border: 1px solid red">
           <p class="text-h3 text-center text-white">PROFILE</p>
-          <div class="row">
-            <div class="col flex justify-center">
-              <img width="300" src="github-logo.png" />
+          <div class="row q-px-md">
+            <div class="col-6" style="height: 350px; border: 1px solid red">
+              <img src="github-logo.png" style="width: 512px; height: 512px; object-fit: contain" />
             </div>
-            <div class="col">
+            <div class="col-6">
               <p class="text-body1 text-white">對程式開發有高度的熱忱，因此我的職能偏向全端工程師也以此做為我的職涯方向，透過不斷的自學，能掌握前端技術 HTML、Javascript / JQuery、CSS及切版技巧，理解如何設計 UI 與用戶互動，後端技術則有 PHP 及 MySQL，理解如何以 CRUD 來操作資料庫，在歷經了不同的工作環境之下，也掌握了 Python 、Vue 及 PostgreSQL 等各項技術，積累了相當豐富的開發經驗。</p>
               <p class="text-body1 text-white">我對前端及後端都很有興趣，也因此在前後端都有扎實的歷練，也希望能在這兩方面有更深入的發展，在工作中累積不同產業的經驗、學習不同的技術，以面對未來不斷變化的產業趨勢，進一步能將這份經驗帶給團隊、鼓勵團隊並且一起成長。</p>
             </div>
@@ -51,7 +51,7 @@
             <q-slide-transition>
               <div v-show="frontEndExpanded">
                 <q-separator />
-                <q-card-section class="text-body2 ">
+                <q-card-section class="text-body2">
                   熟悉網頁切版及 CSS 來設計 UI/UX 並能夠製作出響應式網頁或是套用前端框架來進行開發
                 </q-card-section>
               </div>
@@ -75,7 +75,7 @@
             <q-slide-transition>
               <div v-show="backEndExpanded">
                 <q-separator />
-                <q-card-section class="text-body2 ">
+                <q-card-section class="text-body2">
                   後端採用 Restful API 風格進行開發，權限認證主要使用 JWT
                 </q-card-section>
               </div>
@@ -99,7 +99,7 @@
             <q-slide-transition>
               <div v-show="databaseExpanded">
                 <q-separator />
-                <q-card-section class="text-body2 ">
+                <q-card-section class="text-body2">
                   在資料庫 Schema 的設計及效能優化有相當經驗，也能夠運用空間資料及時序式資料庫
                 </q-card-section>
               </div>
@@ -124,7 +124,7 @@
             <q-slide-transition>
               <div v-show="osExpanded">
                 <q-separator />
-                <q-card-section class="text-body2 ">
+                <q-card-section class="text-body2">
                   熟悉各開發環境建置及線上環境部署
                 </q-card-section>
               </div>
@@ -147,7 +147,7 @@
             <q-slide-transition>
               <div v-show="vcsExpanded">
                 <q-separator />
-                <q-card-section class="text-body2 ">
+                <q-card-section class="text-body2">
                   瞭解基本 Git 指令並且能理解 Git Flow、Github Flow 及 Gitlab Flow 開發流程並運用在工作中
                 </q-card-section>
               </div>
@@ -170,7 +170,7 @@
             <q-slide-transition>
               <div v-show="otherExpanded">
                 <q-separator />
-                <q-card-section class="text-body2 ">
+                <q-card-section class="text-body2">
                   工作中常使用的軟體，在操作及設定上能做最適當的配置
                 </q-card-section>
               </div>
@@ -215,7 +215,9 @@
             <q-separator />
             <q-card-actions class="flex justify-end q-gutter-md">
               <q-btn color="blue-grey-5" flat round icon="movie" />
-              <q-btn color="blue-grey-5" flat round icon="public" @click="openLink('https://wrs.ntpc.thinktron.co/')" />
+              <q-btn color="blue-grey-5" flat round icon="public" @click="openLink('https://wrs.ntpc.thinktron.co/')">
+                <q-tooltip>開啟網頁</q-tooltip>
+              </q-btn>
             </q-card-actions>
           </q-card>
           <q-card>
@@ -227,6 +229,7 @@
                   <q-carousel-slide :name="3" img-src="水源局3.png" />
                   <q-carousel-slide :name="4" img-src="水源局4.png" />
                   <q-carousel-slide :name="5" img-src="水源局5.png" />
+                  <q-carousel-slide :name="6" img-src="水源局6.png" />
                 </q-carousel>
               </q-card-section>
               <q-card-section style="width: 63%">
@@ -249,7 +252,9 @@
             <q-separator />
             <q-card-actions class="flex justify-end q-gutter-md">
               <q-btn color="blue-grey-5" flat round icon="movie" />
-              <q-btn color="blue-grey-5" flat round icon="public" @click="openLink('https://sss.wratb.gov.tw/')" />
+              <q-btn color="blue-grey-5" flat round icon="public" @click="openLink('https://sss.wratb.gov.tw/')">
+                <q-tooltip>開啟網頁</q-tooltip>
+              </q-btn>
             </q-card-actions>
           </q-card>
           <q-card>
@@ -257,10 +262,10 @@
               <q-card-section class="q-pa-none q-ma-none" style="width: 47%">
                 <q-carousel animated v-model="golfSlide" arrows navigation infinite style="border-radius: 6px">
                   <q-carousel-slide :name="1" img-src="高爾夫1.png" />
-                  <q-carousel-slide :name="2" img-src="高爾夫1.png" />
-                  <q-carousel-slide :name="3" img-src="高爾夫1.png" />
-                  <q-carousel-slide :name="4" img-src="高爾夫1.png" />
-                  <q-carousel-slide :name="5" img-src="高爾夫1.png" />
+                  <q-carousel-slide :name="2" img-src="高爾夫2.png" />
+                  <q-carousel-slide :name="3" img-src="高爾夫3.png" />
+                  <q-carousel-slide :name="4" img-src="高爾夫4.png" />
+                  <q-carousel-slide :name="5" img-src="高爾夫5.png" />
                 </q-carousel>
               </q-card-section>
               <q-card-section style="width: 63%">
@@ -283,7 +288,9 @@
             <q-separator />
             <q-card-actions class="flex justify-end q-gutter-md">
               <q-btn color="blue-grey-5" flat round icon="movie" />
-              <q-btn color="blue-grey-5" flat round icon="public" @click="openLink('https://ysgolf.thinktron.co/')" />
+              <q-btn color="blue-grey-5" flat round icon="public" @click="openLink('https://ysgolf.thinktron.co/')">
+                <q-tooltip>開啟網頁</q-tooltip>
+              </q-btn>
             </q-card-actions>
           </q-card>
           <q-card>
@@ -314,7 +321,9 @@
             <q-separator />
             <q-card-actions class="flex justify-end q-gutter-md">
               <q-btn color="blue-grey-5" flat round icon="movie" />
-              <q-btn color="blue-grey-5" flat round icon="public" @click="openLink('http://103.124.73.17:8000/')" />
+              <q-btn color="blue-grey-5" flat round icon="public" @click="openLink('http://103.124.73.17:8000/')">
+                <q-tooltip>開啟網頁</q-tooltip>
+              </q-btn>
             </q-card-actions>
           </q-card>
           <q-card>
@@ -347,7 +356,9 @@
             <q-separator />
             <q-card-actions class="flex justify-end q-gutter-md">
               <q-btn color="blue-grey-5" flat round icon="movie" />
-              <q-btn color="blue-grey-5" flat round icon="public" @click="openLink('https://nfadw.emic.gov.tw/')" />
+              <q-btn color="blue-grey-5" flat round icon="public" @click="openLink('https://nfadw.emic.gov.tw/')">
+                <q-tooltip>開啟網頁</q-tooltip>
+              </q-btn>
             </q-card-actions>
           </q-card>
         </div>
@@ -431,11 +442,24 @@
     </div>
     <a name="CONTACT" />
     <br />
-    <div class="">
+    <div id="contact">
       <h3 class="text-center">CONTACT</h3>
-      <div class="flex justify-center q-gutter-xl q-py-xl">
-        <q-btn icon="email" color="blue-grey-5" size="xl" flat round />
-        <q-btn icon="phone" color="blue-grey-5" size="xl" flat round />
+      <div class="flex justify-evenly q-py-xl">
+        <a href="https://github.com/masatora" target="_blank">
+          <q-btn icon="img:github.png" color="blue-grey-5" size="xl" flat round>
+            <q-tooltip>Github: https://github.com/masatora</q-tooltip>
+          </q-btn>
+        </a>
+        <a href="mailto:omadedou@gmail.com">
+          <q-btn icon="email" color="blue-grey-9" size="xl" flat round>
+            <q-tooltip>Email: omadedou@gmail.com</q-tooltip>
+          </q-btn>
+        </a>
+        <a href="tel:+886-987220607">
+          <q-btn icon="phone" color="blue-grey-9" size="xl" flat round>
+            <q-tooltip>Phone: 0987-220-607</q-tooltip>
+          </q-btn>
+        </a>
       </div>
     </div>
   </div>
@@ -514,5 +538,9 @@ export default defineComponent({
 
   a:active
     color: #000
+
+#contact
+  a
+    text-decoration: none
 
 </style>
