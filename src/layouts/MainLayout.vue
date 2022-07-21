@@ -26,7 +26,7 @@
       </q-slide-transition>
     </div>
     <a name="PROFILE" />
-    <div class="row justify-between">
+    <div class="row">
       <q-parallax :height="windowHeight">
         <template v-slot:media>
           <img src="nddw0kak6nq41.jpg">
@@ -520,33 +520,21 @@
       <h3 class="text-bold text-center">CONTACT</h3>
       <div class="flex justify-center bg-blue-grey-1">
         <q-list>
-          <q-item>
+          <q-item class="q-pa-lg" clickable @click="clickHref('https://github.com/masatora', '_blank')">
             <q-item-section side>
-              <a href="https://github.com/masatora" target="_blank">
-                <q-btn icon="img:github.png" color="blue-grey-5" size="xl" flat round>
-                  <q-tooltip>Github: https://github.com/masatora</q-tooltip>
-                </q-btn>
-              </a>
+              <q-icon name="img:github.png" color="blue-grey-5" size="xl" />
             </q-item-section>
             <q-item-section class="text-body1">Github: https://github.com/masatora</q-item-section>
           </q-item>
-          <q-item>
+          <q-item class="q-pa-lg" clickable @click="clickHref('mailto:omadedou@gmail.com')">
             <q-item-section side>
-              <a href="mailto:omadedou@gmail.com">
-                <q-btn icon="email" color="blue-grey-9" size="xl" flat round>
-                  <q-tooltip>Email: omadedou@gmail.com</q-tooltip>
-                </q-btn>
-              </a>
+              <q-icon name="email" color="blue-grey-9" size="xl" />
             </q-item-section>
             <q-item-section class="text-body1">Email: omadedou@gmail.com</q-item-section>
           </q-item>
-          <q-item>
+          <q-item class="q-pa-lg" clickable @click="clickHref('tel:+886-987220607')">
             <q-item-section side>
-              <a href="tel:+886-987220607">
-                <q-btn icon="phone" color="blue-grey-9" size="xl" flat round>
-                  <q-tooltip>Phone: 0987-220-607</q-tooltip>
-                </q-btn>
-              </a>
+              <q-icon name="phone" color="blue-grey-9" size="xl" />
             </q-item-section>
             <q-item-section class="text-body1">Phone: 0987-220-607</q-item-section>
           </q-item>
@@ -567,6 +555,16 @@ export default defineComponent({
   setup () {
     const openLink = (link) => {
       window.open(link)
+    }
+    const clickHref = (href, target) => {
+      const a = document.createElement('a')
+
+      if (target !== undefined) {
+        a.target = target
+      }
+
+      a.href = href
+      a.click()
     }
     const windowHeight = ref(400)
     const positionName = ref('PROFILE')
@@ -589,7 +587,7 @@ export default defineComponent({
     }
 
     onMounted(() => {
-      windowHeight.value = (window.innerHeight * 4) / 5
+      windowHeight.value = (window.innerHeight * 5) / 6
       skillsPos.value = (document.getElementsByName('SKILLS')[0]).getBoundingClientRect()
       portfolioPos.value = (document.getElementsByName('PORTFOLIO')[0]).getBoundingClientRect()
       experiencePos.value = (document.getElementsByName('EXPERIENCE')[0]).getBoundingClientRect()
@@ -613,7 +611,8 @@ export default defineComponent({
       windowHeight,
       positionName,
       openLink,
-      onScroll
+      onScroll,
+      clickHref
     }
   }
 })
