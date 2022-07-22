@@ -32,15 +32,16 @@
           <img src="nddw0kak6nq41.jpg">
         </template>
         <div class="row flex justify-center">
-          <div class="col-xs-12 col-sm-10 col-md-8 col-lg-7 col-xl-5" style="background-color: rgba(0, 0, 0, 0.4); border-radius: 10px">
-            <h3 class="text-bold text-center text-white">PROFILE</h3>
+          <div class="col-xs-12 col-sm-10 col-md-8 col-lg-7 col-xl-6" style="background-color: rgba(0, 0, 0, 0.6); border-radius: 10px">
+            <p class="text-h3 text-bold text-center text-white q-pa-lg">PROFILE</p>
             <div class="row q-px-md">
               <div class="col-xs-12 col-md-6 flex justify-center" style="height: 34vmin">
                 <img src="github-logo.png" style="max-width: 100%; max-height: 100%" />
               </div>
               <div class="col-xs-12 col-md-6">
-                <p class="text-body1 text-white">對程式開發有高度的熱忱，因此我的職能偏向全端工程師也以此做為我的職涯方向，透過不斷的自學，能掌握前端技術 HTML、Javascript / JQuery、CSS及切版技巧，理解如何設計 UI 與用戶互動，後端技術則有 PHP 及 MySQL，理解如何以 CRUD 來操作資料庫，在歷經了不同的工作環境之下，也掌握了 Python 、Vue 及 PostgreSQL 等各項技術，積累了相當豐富的開發經驗。</p>
-                <p class="text-body1 text-white">我對前端及後端都很有興趣，也因此在前後端都有扎實的歷練，也希望能在這兩方面有更深入的發展，在工作中累積不同產業的經驗、學習不同的技術，以面對未來不斷變化的產業趨勢，進一步能將這份經驗帶給團隊、鼓勵團隊並且一起成長。</p>
+                <p class="text-body1 text-white">從事 Web 開發已有近<q-badge class="text-body1">10年的工作經驗</q-badge>，開發皆以全端為主，並以<q-badge class="text-body1">全端工程師</q-badge>做為職涯方向，透過持續自學掌握前端技術 HTML、Javascript / JQuery、CSS及切版技巧，基於使用者角度思考 UI/UX 優化整體設計;後端方面技術則包含 PHP、RDBMS 資料庫操作、SQL 查詢最佳化及效能調校。</p>
+                <p class="text-body1 text-white">在各項不同的工作經歷中，也掌握了 Python、RESTful API 設計方式、Vue、PostgreSQL、Web GIS、CesiumJS / Leaflet 等各項技術，在業界也積累了相當豐富的開發經驗，如內政部消防署、新北市水利局及水源特定區管理局等。</p>
+                <p class="text-body1 text-white">我對前端及後端均有濃厚興趣，也都有扎實的開發歷練，並希望能在全端有更深入的發展，在工作中累積不同產業的經驗、持續性學習各式框架與生態系，應用不同的技術，以面對不斷變化的產業趨勢，進一步將這份熱忱與經驗帶給團隊、鼓勵團隊並且一起成長!</p>
               </div>
             </div>
           </div>
@@ -99,7 +100,7 @@
                 <div v-show="backEndExpanded">
                   <q-separator />
                   <q-card-section class="text-body2">
-                    後端採用 Restful API 風格進行開發，權限認證主要使用 JWT
+                    後端採用 Restful API 風格進行開發，權限認證主要使用 JWT，熟稔各類加密與程式撰寫方法，以符合資安開發要求
                   </q-card-section>
                 </div>
               </q-slide-transition>
@@ -125,7 +126,7 @@
                 <div v-show="databaseExpanded">
                   <q-separator />
                   <q-card-section class="text-body2">
-                    在資料庫 Schema 的設計及效能優化有相當經驗，也能夠運用空間資料及時序式資料庫
+                    在資料庫 Schema 的設計、查詢最佳化及效能調校有相當豐富經驗，也能夠運用空間資料及時序式資料庫
                   </q-card-section>
                 </div>
               </q-slide-transition>
@@ -142,7 +143,7 @@
                   <q-item>Ubuntu</q-item>
                   <q-item>Docker</q-item>
                   <q-item>VirtualBox</q-item>
-                  <q-item>RaspberryPi</q-item>
+                  <q-item>RaspberryPi / Arduino</q-item>
                 </q-list>
               </q-card-section>
               <q-card-actions class="flex justify-end q-py-none">
@@ -152,7 +153,7 @@
                 <div v-show="osExpanded">
                   <q-separator />
                   <q-card-section class="text-body2">
-                    熟悉各開發環境建置及線上環境部署
+                    熟悉各開發環境建置及線上環境部署；另外也能夠製作電路搭配樹莓派或 Arduino 開發出 IoT 裝置
                   </q-card-section>
                 </div>
               </q-slide-transition>
@@ -235,18 +236,17 @@
                   <q-card-section>
                     <q-list dense class="text-body1">
                       <q-badge class="absolute absolute-top-right text-body2 bg-positive" label="維運中" />
-                      <q-item class="text-h6 text-bold flex justify-center">新北水利局雨水下水道水位監測系統</q-item>
+                      <q-item class="text-h6 text-bold flex justify-center">新北市水利局雨水下水道水位監測系統</q-item>
                       <q-separator class="q-my-xs" />
                       <q-item class="text-bold">專案說明：</q-item>
                       <q-item>提供雨水下水道水位即時監測與資料分析，提升人員效率並即時處理淹水情況</q-item>
                       <q-item>．負責前後端程式設計、資料庫設計、 UI/UX 操作介面設計，與 PM 協同規劃</q-item>
-                      <q-item>．前端：ES6、Vue / Quasar、Cesium、Stylus</q-item>
-                      <q-item>．後端：Python / Flask、MySQL、Nginx、Windows</q-item>
+                      <q-item>．前端：ES6、Vue / Quasar、Cesium、Stylus、Highcharts</q-item>
+                      <q-item>．後端：Python / Flask、MySQL、Geoserver、Nginx、Windows</q-item>
                       <q-item class="text-bold">專案特色：</q-item>
-                      <q-item>．直覺式水位警戒辨識</q-item>
-                      <q-item>．雨量與水位統計分析</q-item>
-                      <q-item>．淹水示意及即時影像</q-item>
-                      <q-item>．現場抽水設備監測</q-item>
+                      <q-item>．Highcharts 時序、統計資料視覺化</q-item>
+                      <q-item>．Cesium Web GIS 與測站連動即時呈現水位狀況</q-item>
+                      <q-item>．Requests 資料介接並整合各機關 API，實現影像串接服務及即時淹水警示</q-item>
                     </q-list>
                   </q-card-section>
                 </div>
@@ -284,12 +284,13 @@
                       <q-item class="text-bold">專案說明：</q-item>
                       <q-item>提供山區崩塌預測，避免發生災害時人員傷亡或週邊設備財物損失</q-item>
                       <q-item>．負責前後端程式設計、資料庫設計、 UI/UX 操作介面設計並支援手機版本操作，與 AI 工程師及 PM 協同合作開發</q-item>
-                      <q-item>．前端：ES6、Vue / Quasar、Cesium、Stylus</q-item>
+                      <q-item>．前端：ES6、Vue / Quasar、Cesium、Stylus、Highcharts</q-item>
                       <q-item>．後端：Python / Flask、PostgreSQL、Redis、Nginx、Ubuntu</q-item>
                       <q-item class="text-bold">專案特色：</q-item>
-                      <q-item>．各測站即時觀測、預報及資料分析</q-item>
-                      <q-item>．直覺式的崩塌預警</q-item>
-                      <q-item>．監測站警戒值圖像化</q-item>
+                      <q-item>．氣象資源 API 整合與介接，提供即時觀測、預報及資料分析</q-item>
+                      <q-item>．Quasar Framework 設計視覺化元件及各裝置版型</q-item>
+                      <q-item>．Cesium 介接崩塌預測 API 實現崩塌預警</q-item>
+                      <q-item>．Redis 實現資料備援機制，提升資料介接的穩定性</q-item>
                     </q-list>
                   </q-card-section>
                 </div>
@@ -331,12 +332,12 @@
                       <q-item class="text-bold">專案說明：</q-item>
                       <q-item>減少球場雇用人力、自駕車自動化接送</q-item>
                       <q-item>．負責前後端圖台的程式設計、資料庫設計、 UI/UX 操作介面設計、MQTT Broker 及 WebSocket 串接並與合作廠商討論規格</q-item>
-                      <q-item>．前端：ES6、Vue / Quasar、Stylus</q-item>
-                      <q-item>．後端：Python / Flask、PostgreSQL、MQTT、Ubuntu</q-item>
+                      <q-item>．前端：ES6、Vue / Quasar、Stylus、Websocket</q-item>
+                      <q-item>．後端：Python / Flask、PostgreSQL、PostGIS、MQTT、Websocket、Ubuntu</q-item>
                       <q-item class="text-bold">專案特色：</q-item>
-                      <q-item>．透過 Web 技術對實體自駕車進行派遣並自動規劃最佳路線</q-item>
-                      <q-item>．自駕車軌跡檢視、播放功能</q-item>
-                      <q-item>．電子圍離系統</q-item>
+                      <q-item>．MQTT + WS 雙向溝通接收車機訊號，實現車輛定位與即時影像監控</q-item>
+                      <q-item>．PostGIS 處理車機運行軌跡再處理成 CZML，由 Cesium 播放歷史軌跡記錄</q-item>
+                      <q-item>．Cesium 繪製車道屏蔽範圍，再以 MQTT 發送至車機實現電子圍籬系統</q-item>
                     </q-list>
                   </q-card-section>
                 </div>
@@ -377,9 +378,9 @@
                       <q-item>．前端：ES6、Vue / Quasar、Cesium、Stylus</q-item>
                       <q-item>．後端：Python / Flask、SQLite、Nginx、Ubuntu</q-item>
                       <q-item class="text-bold">專案特色：</q-item>
-                      <q-item>．操作 web 介面來產生 AI 訓練結果，提昇用戶體驗</q-item>
-                      <q-item>．視覺化可耕地位置及面積</q-item>
-                      <q-item>．提供歷史查詢功能，以便驗証 AI 模型的準確性</q-item>
+                      <q-item>．Axios 串接系統 AI 程式，提供視覺化操作與提昇用戶體驗</q-item>
+                      <q-item>．Cesium Web GIS 圖層介接，視覺化可耕地位置及面積</q-item>
+                      <q-item>．SQLite 紀錄 AI 運作結果，提供部署便利性</q-item>
                     </q-list>
                   </q-card-section>
                 </div>
@@ -416,12 +417,12 @@
                       <q-item>蒐集消防相關資料並進行資料清洗，再由 AI 團隊開發示警模組及輿情分析功能</q-item>
                       <q-item>．負責前後端程式設計、資料庫設計、 UI/UX 操作介面設計、資料清洗及壓力測試</q-item>
                       <q-item>．前端：ES6、Vue / Quasar、SASS</q-item>
-                      <q-item>．後端：Python / FastAPI、PostgreSQL、Memcached、Nginx、Beautiful Soup</q-item>
+                      <q-item>．後端：Python / FastAPI、PostgreSQL、Memcached、Nginx、Beautiful Soup4</q-item>
                       <q-item>．QA：JMeter</q-item>
                       <q-item class="text-bold">專案特色：</q-item>
-                      <q-item>．視覺化監控爬蟲程式狀態</q-item>
-                      <q-item>．詮釋資料審核管理</q-item>
-                      <q-item>．API 資料開放介接</q-item>
+                      <q-item>．Postgres及排程呈現實時爬蟲狀態監測視覺化</q-item>
+                      <q-item>．BS4 做爬蟲，正規表示式進行資料清洗後進倉儲</q-item>
+                      <q-item>．Fastapi 開發出外部介接 API 再以 Swagger 發佈，以 JWT 做身份認證</q-item>
                     </q-list>
                   </q-card-section>
                 </div>
@@ -494,7 +495,7 @@
               <q-item>1．開發維護電子商務網站前後台。</q-item>
               <q-item>2．RESTful api開發。</q-item>
               <q-item>3．最佳化 SEO。</q-item>
-              <q-item>4．程式效能分析調整。</q-item>
+              <q-item>4．程式效能分析調整及資料庫查詢最佳化。</q-item>
             </q-list>
           </q-timeline-entry>
           <q-timeline-entry
@@ -506,9 +507,15 @@
               <q-item-label class="text-bold q-py-sm">職稱</q-item-label>
               <q-item>Web程式設計</q-item>
               <q-item-label class="text-bold q-py-sm">工作內容</q-item-label>
-              <q-item>1．開發維護各遊戲官網。</q-item>
-              <q-item>2．網頁遊戲活動開發。</q-item>
-              <q-item>3．技術研究及開發工具。</q-item>
+              <q-item>1．開發維護各遊戲官網: </q-item>
+              <q-item>2．網頁遊戲活動開發: </q-item>
+              <q-item>3．技術研究及開發工具: </q-item>
+              <q-item-label class="text-bold q-py-sm">開發成果</q-item-label>
+              <q-item>1．</q-item>
+              <q-item>2．</q-item>
+              <q-item>3．</q-item>
+              <q-item>4．</q-item>
+              <q-item>5．</q-item>
             </q-list>
           </q-timeline-entry>
         </q-timeline>
