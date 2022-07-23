@@ -454,7 +454,7 @@
               <q-item-label class="text-bold q-py-sm">職稱</q-item-label>
               <q-item>全端軟體工程師</q-item>
               <q-item-label class="text-bold q-py-sm">工作內容</q-item-label>
-              <q-item>1．專案開發: 主要工作項目為前後端程式開發，前端的版型設計、切版與 API 串接，後端以 python 做 API 開發、postgresql 資料庫設計、伺服器的維運。專案內容多與 AIoT 有關並與團隊一起合作開發，將收到的 sensor 資料經由 AI 訓練，再將結果展示在 3D / 2D 空間圖台。</q-item>
+              <q-item>1．專案開發: 主要工作項目為前後端程式開發，前端的版型設計、切版與 API 串接，後端以 python 做 API 開發、postgreSQL 資料庫設計、伺服器的維運。專案內容多與 AIoT 有關並與團隊一起合作開發，將收到的 sensor 資料經由 AI 訓練，再將結果展示在 3D / 2D 空間圖台。</q-item>
               <q-item>2．網路維運: 兼任公司 MIS 工作，負責公司網路故障排除、伺服器維運等等。</q-item>
               <q-item>3．技術指導: 在 Web 方面有較多的開發經驗，因此在公司內也擔任技術方面的指導者。</q-item>
               <q-item-label class="text-bold q-py-sm">專案成果</q-item-label>
@@ -507,15 +507,9 @@
               <q-item-label class="text-bold q-py-sm">職稱</q-item-label>
               <q-item>Web程式設計</q-item>
               <q-item-label class="text-bold q-py-sm">工作內容</q-item-label>
-              <q-item>1．開發維護各遊戲官網: </q-item>
-              <q-item>2．網頁遊戲活動開發: </q-item>
-              <q-item>3．技術研究及開發工具: </q-item>
-              <q-item-label class="text-bold q-py-sm">開發成果</q-item-label>
-              <q-item>1．</q-item>
-              <q-item>2．</q-item>
-              <q-item>3．</q-item>
-              <q-item>4．</q-item>
-              <q-item>5．</q-item>
+              <q-item>1．遊戲官網建置維運: 前端以 JQuery 及 CSS 設計 UI 行為與樣式，後端為 php / VB.net 及 MySQL 來開發前台遊戲官網及後台管理系統，後台提供權限管理及訊息發佈等功能，。</q-item>
+              <q-item>2．遊戲獎勵兌換活動開發: 串接 FB API 或遊戲內部 API </q-item>
+              <q-item>3．技術研究及開發工具: mono svn</q-item>
             </q-list>
           </q-timeline-entry>
         </q-timeline>
