@@ -29,19 +29,20 @@
     <div class="row">
       <q-parallax :height="windowHeight">
         <template v-slot:media>
-          <img src="nddw0kak6nq41.jpg">
+          <img src="https://picsum.photos/1920/1080">
         </template>
         <div class="row flex justify-center">
-          <div class="col-xs-12 col-sm-10 col-md-8 col-lg-7 col-xl-6" style="background-color: rgba(0, 0, 0, 0.6); border-radius: 10px">
+          <div class="col-xs-12 col-sm-10 col-md-8 col-lg-7" style="background-color: rgba(0, 0, 0, 0.3); border-radius: 10px">
             <p class="text-h3 text-bold text-center text-white q-pa-lg">PROFILE</p>
             <div class="row q-px-md">
               <div class="col-xs-12 col-md-6 flex justify-center" style="height: 34vmin">
                 <img src="github-logo.png" style="max-width: 100%; max-height: 100%" />
               </div>
               <div class="col-xs-12 col-md-6">
-                <p class="text-body1 text-white">從事 Web 開發已有近<q-badge class="text-body1">10年的工作經驗</q-badge>，開發皆以全端為主，並以<q-badge class="text-body1">全端工程師</q-badge>做為職涯方向，透過持續自學掌握前端技術 HTML、Javascript / JQuery、CSS及切版技巧，基於使用者角度思考 UI/UX 優化整體設計;後端方面技術則包含 PHP、RDBMS 資料庫操作、SQL 查詢最佳化及效能調校。</p>
-                <p class="text-body1 text-white">在各項不同的工作經歷中，也掌握了 Python、RESTful API 設計方式、Vue、PostgreSQL、Web GIS、CesiumJS / Leaflet 等各項技術，在業界也積累了相當豐富的開發經驗，如內政部消防署、新北市水利局及水源特定區管理局等。</p>
-                <p class="text-body1 text-white">我對前端及後端均有濃厚興趣，也都有扎實的開發歷練，並希望能在全端有更深入的發展，在工作中累積不同產業的經驗、持續性學習各式框架與生態系，應用不同的技術，以面對不斷變化的產業趨勢，進一步將這份熱忱與經驗帶給團隊、鼓勵團隊並且一起成長!</p>
+                <p class="text-body1 text-white">我對前端及後端均有濃厚興趣，也有扎實的開發歷練，從事全端開發工作已有近10年的經驗，專案的規劃設計、開發、部署及維運皆能獨力完成，並以全端工程師做為職涯方向。</p>
+                <p class="text-body1 text-white">透過自學掌握前端技術 HTML、Javascript / JQuery、CSS及切版技巧，設計出基於使用者角度思考的 UI/UX；後端方面技術則包含 PHP、MySQL 資料庫操作、SQL 查詢最佳化及效能調校。</p>
+                <p class="text-body1 text-white">在不同的工作歷練下也逐漸掌握了 Python、RESTful API、Vue、PostgreSQL、Web GIS 等各項技術，為業主服務也獲得優良評價，如內政部消防署、新北市水利局及水源特定區管理局等。</p>
+                <p class="text-body1 text-white">我喜歡學習各式框架與生態系，應用不同的技術來面對不斷變化的產業趨勢，我也樂於分享自己的開發經驗給予團隊，以這份熱忱來鼓勵團隊並且一起成長!!</p>
               </div>
             </div>
           </div>
@@ -454,7 +455,7 @@
               <q-item-label class="text-bold q-py-sm">職稱</q-item-label>
               <q-item>全端軟體工程師</q-item>
               <q-item-label class="text-bold q-py-sm">工作內容</q-item-label>
-              <q-item>1．專案開發: 主要工作項目為前後端程式開發，前端的版型設計、切版與 API 串接，後端以 python 做 API 開發、postgreSQL 資料庫設計、伺服器的維運。專案內容多與 AIoT 有關並與團隊一起合作開發，將收到的 sensor 資料經由 AI 訓練，再將結果展示在 3D / 2D 空間圖台。</q-item>
+              <q-item>1．專案開發: 主要工作項目為前後端程式開發，前端使用 Vue/Quasar 進行版型設計、切版與 API 串接，後端以 python 開發 Restful API、postgreSQL 資料庫設計、伺服器維運。專案內容多與 AIoT 有關並與團隊一起合作開發，將收到的 sensor 資料經由 AI 訓練，再將結果展示在 3D / 2D 空間圖台。</q-item>
               <q-item>2．網路維運: 兼任公司 MIS 工作，負責公司網路故障排除、伺服器維運等等。</q-item>
               <q-item>3．技術指導: 在 Web 方面有較多的開發經驗，因此在公司內也擔任技術方面的指導者。</q-item>
               <q-item-label class="text-bold q-py-sm">專案成果</q-item-label>
@@ -479,8 +480,8 @@
               <q-item-label class="text-bold q-py-sm">職稱</q-item-label>
               <q-item>Server軟體工程師</q-item>
               <q-item-label class="text-bold q-py-sm">工作內容</q-item-label>
-              <q-item>1．後台歌曲管理系統開發及維護。</q-item>
-              <q-item>2．開發視覺化營運報表。</q-item>
+              <q-item>1．後台歌曲管理系統開發及維護: PHP 與 MySQL 開發後台管理系統，利用 Git Flow 來控制開發進度，測試時以 JMeter 進行白箱測試，提升源始碼質量以保證後台功能的可用性</q-item>
+              <q-item>2．開發視覺化營運報表: 以 Chart.js 將篩選的資料以視覺化來呈現與分析，綁定事件與客戶端互動。</q-item>
             </q-list>
           </q-timeline-entry>
           <q-timeline-entry
@@ -492,10 +493,10 @@
               <q-item-label class="text-bold q-py-sm">職稱</q-item-label>
               <q-item>Web工程師</q-item>
               <q-item-label class="text-bold q-py-sm">工作內容</q-item-label>
-              <q-item>1．開發維護電子商務網站前後台。</q-item>
-              <q-item>2．RESTful api開發。</q-item>
-              <q-item>3．最佳化 SEO。</q-item>
-              <q-item>4．程式效能分析調整及資料庫查詢最佳化。</q-item>
+              <q-item>1．開發維護電子商務網站前後台: PHP(CodeIgniter) 及 Oracle PL/SQL 來開發電商網站服務，以 MVC 架構進行開發。</q-item>
+              <q-item>2．最佳化 SEO: 參照 schema.org 加入結構化資訊，並調整 DOM 結構與 HTML tag 使其更符合 SEO 語意，完成後在 google 的 1~3 頁之間皆能得出搜尋結果。</q-item>
+              <q-item>3．程式效能分析與重構: 以 XHProf 進行源始碼效能測試，評估後以 SOLID 開發原則做為主軸，並著重於高內聚低耦合來進行重構，完成後再次進行測試效能提升了50%。</q-item>
+              <q-item>4．資料庫查詢最佳化: 優化暨有 SQL statement 以 Explain Plan 進行分析，調整出最合適的語法以降低響應時間。</q-item>
             </q-list>
           </q-timeline-entry>
           <q-timeline-entry
@@ -507,9 +508,10 @@
               <q-item-label class="text-bold q-py-sm">職稱</q-item-label>
               <q-item>Web程式設計</q-item>
               <q-item-label class="text-bold q-py-sm">工作內容</q-item-label>
-              <q-item>1．遊戲官網建置維運: 前端以 JQuery 及 CSS 設計 UI 行為與樣式，後端為 php / VB.net 及 MySQL 來開發前台遊戲官網及後台管理系統，後台提供權限管理及訊息發佈等功能，。</q-item>
-              <q-item>2．遊戲獎勵兌換活動開發: 串接 FB API 或遊戲內部 API </q-item>
-              <q-item>3．技術研究及開發工具: mono svn</q-item>
+              <q-item>1．遊戲官網建置維運: 前端以 JQuery 及 CSS 設計 UI 行為與樣式，後端為 php / VB.net 及 MySQL 來開發前台遊戲官網及後台管理系統，後台提供權限管理及訊息發佈等功能，將訊息呈現在前台上。</q-item>
+              <q-item>2．遊戲獎勵兌換網頁活動開發: 前台設計遊戲活動，以 AJAX 串接 FB API 或遊戲內部 API 來兌換遊戲中的獎勵。</q-item>
+              <q-item>3．技術研究: 將所有 .Net Framework 的官網移植至 Linux 上，並透過 Mono Framework 來完成，以減低在 Windows 上維運的成本。</q-item>
+              <q-item>3．開發工具: 利用 SVN 開發出部門內程式自動上版流程，提升部門工作效率。</q-item>
             </q-list>
           </q-timeline-entry>
         </q-timeline>
@@ -587,8 +589,8 @@ export default defineComponent({
       }
     }
 
-    onMounted(() => {
-      windowHeight.value = (window.innerHeight * 5) / 6
+    onMounted(async () => {
+      windowHeight.value = window.innerHeight
       skillsPos.value = (document.getElementsByName('SKILLS')[0]).getBoundingClientRect()
       portfolioPos.value = (document.getElementsByName('PORTFOLIO')[0]).getBoundingClientRect()
       experiencePos.value = (document.getElementsByName('EXPERIENCE')[0]).getBoundingClientRect()
