@@ -220,7 +220,12 @@
       <div class="row flex justify-center">
         <div class="col-xs-12 col-sm-10 col-md-8 q-gutter-md">
           <q-card>
-            <q-card-section horizontal>
+            <q-card-section horizontal v-if="golfVideo">
+              <video style="width: 100%; height: 100%" autoplay loop muted>
+                <source type="video/mp4" src="水利局.mp4">
+              </video>
+            </q-card-section>
+            <q-card-section horizontal v-else>
               <div class="row" style="width: 100%">
                 <div class="col-xs-12 col-md-5">
                   <q-card-section class="q-pa-none">
@@ -255,14 +260,26 @@
             </q-card-section>
             <q-separator />
             <q-card-actions class="flex justify-end q-gutter-md">
-              <q-btn color="blue-grey-5" flat round icon="movie" />
+              <q-btn color="blue-grey-5" flat round icon="movie" @click="wrsVideo = !wrsVideo">
+                <q-tooltip>水利局 DEMO</q-tooltip>
+              </q-btn>
               <q-btn color="blue-grey-5" flat round icon="public" @click="openLink('https://wrs.ntpc.thinktron.co/')">
                 <q-tooltip>開啟網頁</q-tooltip>
               </q-btn>
             </q-card-actions>
           </q-card>
           <q-card>
-            <q-card-section horizontal>
+            <q-card-section horizontal v-if="wratbVideo1">
+              <video style="width: 100%; height: 100%" autoplay loop muted>
+                <source type="video/mp4" src="水源局1.mp4">
+              </video>
+            </q-card-section>
+            <q-card-section horizontal v-else-if="wratbVideo2">
+              <video style="width: 100%; height: 100%" autoplay loop muted>
+                <source type="video/mp4" src="水源局2.mp4">
+              </video>
+            </q-card-section>
+            <q-card-section horizontal v-else>
               <div class="row" style="width: 100%">
                 <div class="col-xs-12 col-md-5">
                   <q-card-section class="q-pa-none">
@@ -299,7 +316,12 @@
             </q-card-section>
             <q-separator />
             <q-card-actions class="flex justify-end q-gutter-md">
-              <q-btn color="blue-grey-5" flat round icon="movie" />
+              <q-btn color="blue-grey-5" flat round icon="movie" @click="wratbVideo1 = false; wratbVideo2 = !wratbVideo2">
+                <q-tooltip>水源局 DEMO 2</q-tooltip>
+              </q-btn>
+              <q-btn color="blue-grey-5" flat round icon="movie" @click="wratbVideo2 = false; wratbVideo1 = !wratbVideo1">
+                <q-tooltip>水源局 DEMO 1</q-tooltip>
+              </q-btn>
               <q-btn color="blue-grey-5" flat round icon="public" @click="openLink('https://sss.wratb.gov.tw/')">
                 <q-tooltip>開啟網頁</q-tooltip>
               </q-btn>
@@ -347,7 +369,7 @@
             <q-separator />
             <q-card-actions class="flex justify-end q-gutter-md">
               <q-btn color="blue-grey-5" flat round icon="movie" @click="golfVideo = !golfVideo">
-                <q-tooltip>派遣車輛影片</q-tooltip>
+                <q-tooltip>高爾夫 DEMO</q-tooltip>
               </q-btn>
               <q-btn color="blue-grey-5" flat round icon="public" @click="openLink('https://ysgolf.thinktron.co/')">
                 <q-tooltip>開啟網頁</q-tooltip>
@@ -355,7 +377,12 @@
             </q-card-actions>
           </q-card>
           <q-card>
-            <q-card-section horizontal>
+            <q-card-section horizontal v-if="afaVideo">
+              <video style="width: 100%; height: 100%" autoplay loop muted>
+                <source type="video/mp4" src="農糧署.mp4">
+              </video>
+            </q-card-section>
+            <q-card-section horizontal v-else>
               <div class="row" style="width: 100%">
                 <div class="col-xs-12 col-md-5">
                   <q-card-section class="q-pa-none">
@@ -389,14 +416,21 @@
             </q-card-section>
             <q-separator />
             <q-card-actions class="flex justify-end q-gutter-md">
-              <q-btn color="blue-grey-5" flat round icon="movie" />
+              <q-btn color="blue-grey-5" flat round icon="movie" @click="afaVideo = !afaVideo">
+                <q-tooltip>農糧署 DEMO</q-tooltip>
+              </q-btn>
               <q-btn color="blue-grey-5" flat round icon="public" @click="openLink('http://103.124.73.17:8000/')">
                 <q-tooltip>開啟網頁</q-tooltip>
               </q-btn>
             </q-card-actions>
           </q-card>
           <q-card>
-            <q-card-section horizontal>
+            <q-card-section horizontal v-if="nfaVideo">
+              <video style="width: 100%; height: 100%" autoplay loop muted>
+                <source type="video/mp4" src="消防署.mp4">
+              </video>
+            </q-card-section>
+            <q-card-section horizontal v-else>
               <div class="row" style="width: 100%">
                 <div class="col-xs-12 col-md-5">
                   <q-card-section class="q-pa-none">
@@ -431,7 +465,9 @@
             </q-card-section>
             <q-separator />
             <q-card-actions class="flex justify-end q-gutter-md">
-              <q-btn color="blue-grey-5" flat round icon="movie" />
+              <q-btn color="blue-grey-5" flat round icon="movie" @click="nfaVideo = !nfaVideo">
+                <q-tooltip>消防署 DEMO</q-tooltip>
+              </q-btn>
               <q-btn color="blue-grey-5" flat round icon="public" @click="openLink('https://nfadw.emic.gov.tw/')">
                 <q-tooltip>開啟網頁</q-tooltip>
               </q-btn>
@@ -590,7 +626,7 @@ export default defineComponent({
     }
 
     onMounted(async () => {
-      windowHeight.value = window.innerHeight
+      windowHeight.value = (window.innerHeight * 4) / 5
       skillsPos.value = (document.getElementsByName('SKILLS')[0]).getBoundingClientRect()
       portfolioPos.value = (document.getElementsByName('PORTFOLIO')[0]).getBoundingClientRect()
       experiencePos.value = (document.getElementsByName('EXPERIENCE')[0]).getBoundingClientRect()
@@ -604,7 +640,12 @@ export default defineComponent({
       golfSlide: ref(1),
       afaSlide: ref(1),
       nfaSlide: ref(1),
+      wrsVideo: ref(false),
+      wratbVideo1: ref(false),
+      wratbVideo2: ref(false),
       golfVideo: ref(false),
+      afaVideo: ref(false),
+      nfaVideo: ref(false),
       frontEndExpanded: ref(false),
       backEndExpanded: ref(false),
       databaseExpanded: ref(false),
