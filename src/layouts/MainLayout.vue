@@ -289,7 +289,6 @@
                       <q-carousel-slide :name="3" img-src="水源局3.png" />
                       <q-carousel-slide :name="4" img-src="水源局4.png" />
                       <q-carousel-slide :name="5" img-src="水源局5.png" />
-                      <q-carousel-slide :name="6" img-src="水源局6.png" />
                     </q-carousel>
                   </q-card-section>
                 </div>
@@ -306,7 +305,7 @@
                       <q-item>．後端：Python / Flask、PostgreSQL、Redis、Nginx、Ubuntu</q-item>
                       <q-item class="text-bold">專案特色：</q-item>
                       <q-item>．氣象資源 API 整合與介接，提供即時觀測、預報及資料分析</q-item>
-                      <q-item>．Quasar Framework 設計視覺化元件及各裝置版型</q-item>
+                      <q-item>．Quasar Framework 設計視覺化元件及符合各式設備的 RWD 版型</q-item>
                       <q-item>．Cesium 介接崩塌預測 API 實現崩塌預警</q-item>
                       <q-item>．Redis 實現資料備援機制，提升資料介接的穩定性</q-item>
                     </q-list>
@@ -455,8 +454,8 @@
                       <q-item>．後端：Python / FastAPI、PostgreSQL、Memcached、Nginx、Beautiful Soup4</q-item>
                       <q-item>．QA：JMeter</q-item>
                       <q-item class="text-bold">專案特色：</q-item>
-                      <q-item>．Postgres及排程呈現實時爬蟲狀態監測視覺化</q-item>
-                      <q-item>．BS4 做爬蟲，正規表示式進行資料清洗後進倉儲</q-item>
+                      <q-item>．PostgreSQL 搭配系統排程，開發出爬蟲狀態即時監控視覺化架構</q-item>
+                      <q-item>．BS4 做爬蟲開發，正規表達式進行資料清洗後儲存進資料倉儲</q-item>
                       <q-item>．Fastapi 開發出外部介接 API 再以 Swagger 發佈，以 JWT 做身份認證</q-item>
                     </q-list>
                   </q-card-section>
@@ -547,7 +546,7 @@
               <q-item>1．遊戲官網建置維運: 前端以 JQuery 及 CSS 設計 UI 行為與樣式，後端為 php / VB.net 及 MySQL 來開發前台遊戲官網及後台管理系統，後台提供權限管理及訊息發佈等功能，將訊息呈現在前台上。</q-item>
               <q-item>2．遊戲獎勵兌換網頁活動開發: 前台設計遊戲活動，以 AJAX 串接 FB API 或遊戲內部 API 來兌換遊戲中的獎勵。</q-item>
               <q-item>3．技術研究: 將所有 .Net Framework 的官網移植至 Linux 上，並透過 Mono Framework 來完成，以減低在 Windows 上維運的成本。</q-item>
-              <q-item>3．開發工具: 利用 SVN 開發出部門內程式自動上版流程，提升部門工作效率。</q-item>
+              <q-item>4．開發工具: 利用 SVN 開發出部門內程式自動上版流程，提升部門工作效率。</q-item>
             </q-list>
           </q-timeline-entry>
         </q-timeline>
