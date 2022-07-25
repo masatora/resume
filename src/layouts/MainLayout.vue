@@ -36,13 +36,13 @@
             <p class="text-h3 text-bold text-center text-white q-pa-lg">PROFILE</p>
             <div class="row q-px-md">
               <div class="col-xs-12 col-md-6 flex justify-center" style="height: 34vmin">
-                <img src="github-logo.png" style="max-width: 100%; max-height: 100%" />
+                <img src="img/github-logo.png" style="max-width: 100%; max-height: 100%" />
               </div>
               <div class="col-xs-12 col-md-6">
                 <p class="text-body1 text-white">我對前端及後端均有濃厚興趣，也有扎實的開發歷練，從事全端開發工作已有近10年的經驗，專案的規劃設計、開發、部署及維運皆能獨力完成，並以全端工程師做為職涯方向。</p>
                 <p class="text-body1 text-white">透過自學掌握前端技術 HTML、Javascript / JQuery、CSS及切版技巧，設計出基於使用者角度思考的 UI/UX；後端方面技術則包含 PHP、MySQL 資料庫操作、SQL 查詢最佳化及效能調校。</p>
                 <p class="text-body1 text-white">在不同的工作歷練下也逐漸掌握了 Python、RESTful API、Vue、PostgreSQL、Web GIS 等各項技術，為業主服務也獲得優良評價，如內政部消防署、新北市水利局及水源特定區管理局等。</p>
-                <p class="text-body1 text-white">我喜歡學習各式框架與生態系，應用不同的技術來面對不斷變化的產業趨勢，我也樂於分享自己的開發經驗給予團隊，以這份熱忱來鼓勵團隊並且一起成長!!</p>
+                <p class="text-body1 text-white">我喜歡學習各式框架與生態系，應用不同的技術來面對不斷變化的產業趨勢，我也樂於分享自己的開發經驗給予團隊，希望能以這份熱忱來鼓舞團隊並且一起成長!!</p>
               </div>
             </div>
           </div>
@@ -222,7 +222,7 @@
           <q-card>
             <q-card-section horizontal v-if="golfVideo">
               <video style="width: 100%; height: 100%" autoplay loop muted>
-                <source type="video/mp4" src="水利局.mp4">
+                <source type="video/mp4" src="video/水利局.mp4">
               </video>
             </q-card-section>
             <q-card-section horizontal v-else>
@@ -230,11 +230,11 @@
                 <div class="col-xs-12 col-md-5">
                   <q-card-section class="q-pa-none">
                     <q-carousel v-model="wrsSlide" animated arrows swipeable navigation infinite style="border-radius: 6px">
-                      <q-carousel-slide :name="1" img-src="水利局1.png" />
-                      <q-carousel-slide :name="2" img-src="水利局2.png" />
-                      <q-carousel-slide :name="3" img-src="水利局3.png" />
-                      <q-carousel-slide :name="4" img-src="水利局4.png" />
-                      <q-carousel-slide :name="5" img-src="水利局5.png" />
+                      <q-carousel-slide :name="1" img-src="img/水利局1.png" />
+                      <q-carousel-slide :name="2" img-src="img/水利局2.png" />
+                      <q-carousel-slide :name="3" img-src="img/水利局3.png" />
+                      <q-carousel-slide :name="4" img-src="img/水利局4.png" />
+                      <q-carousel-slide :name="5" img-src="img/水利局5.png" />
                     </q-carousel>
                   </q-card-section>
                 </div>
@@ -271,12 +271,12 @@
           <q-card>
             <q-card-section horizontal v-if="wratbVideo1">
               <video style="width: 100%; height: 100%" autoplay loop muted>
-                <source type="video/mp4" src="水源局1.mp4">
+                <source type="video/mp4" src="video/水源局1.mp4">
               </video>
             </q-card-section>
             <q-card-section horizontal v-else-if="wratbVideo2">
               <video style="width: 100%; height: 100%" autoplay loop muted>
-                <source type="video/mp4" src="水源局2.mp4">
+                <source type="video/mp4" src="video/水源局2.mp4">
               </video>
             </q-card-section>
             <q-card-section horizontal v-else>
@@ -284,11 +284,11 @@
                 <div class="col-xs-12 col-md-5">
                   <q-card-section class="q-pa-none">
                     <q-carousel v-model="wratbSlide" animated arrows swipeable navigation infinite style="border-radius: 6px">
-                      <q-carousel-slide :name="1" img-src="水源局1.png" />
-                      <q-carousel-slide :name="2" img-src="水源局2.png" />
-                      <q-carousel-slide :name="3" img-src="水源局3.png" />
-                      <q-carousel-slide :name="4" img-src="水源局4.png" />
-                      <q-carousel-slide :name="5" img-src="水源局5.png" />
+                      <q-carousel-slide :name="1" img-src="img/水源局1.png" />
+                      <q-carousel-slide :name="2" img-src="img/水源局2.png" />
+                      <q-carousel-slide :name="3" img-src="img/水源局3.png" />
+                      <q-carousel-slide :name="4" img-src="img/水源局4.png" />
+                      <q-carousel-slide :name="5" img-src="img/水源局5.png" />
                     </q-carousel>
                   </q-card-section>
                 </div>
@@ -329,7 +329,7 @@
           <q-card>
             <q-card-section horizontal v-if="golfVideo">
               <video style="width: 100%; height: 100%" autoplay loop muted>
-                <source type="video/mp4" src="高爾夫.mp4">
+                <source type="video/mp4" src="video/高爾夫.mp4">
               </video>
             </q-card-section>
             <q-card-section horizontal v-else>
@@ -337,11 +337,11 @@
                 <div class="col-xs-12 col-md-5">
                   <q-card-section class="q-pa-none">
                     <q-carousel v-model="golfSlide" animated arrows swipeable navigation infinite style="border-radius: 6px">
-                      <q-carousel-slide :name="1" img-src="高爾夫1.png" />
-                      <q-carousel-slide :name="2" img-src="高爾夫2.png" />
-                      <q-carousel-slide :name="3" img-src="高爾夫3.png" />
-                      <q-carousel-slide :name="4" img-src="高爾夫4.png" />
-                      <q-carousel-slide :name="5" img-src="高爾夫5.png" />
+                      <q-carousel-slide :name="1" img-src="img/高爾夫1.png" />
+                      <q-carousel-slide :name="2" img-src="img/高爾夫2.png" />
+                      <q-carousel-slide :name="3" img-src="img/高爾夫3.png" />
+                      <q-carousel-slide :name="4" img-src="img/高爾夫4.png" />
+                      <q-carousel-slide :name="5" img-src="img/高爾夫5.png" />
                     </q-carousel>
                   </q-card-section>
                 </div>
@@ -378,7 +378,7 @@
           <q-card>
             <q-card-section horizontal v-if="afaVideo">
               <video style="width: 100%; height: 100%" autoplay loop muted>
-                <source type="video/mp4" src="農糧署.mp4">
+                <source type="video/mp4" src="video/農糧署.mp4">
               </video>
             </q-card-section>
             <q-card-section horizontal v-else>
@@ -386,10 +386,10 @@
                 <div class="col-xs-12 col-md-5">
                   <q-card-section class="q-pa-none">
                     <q-carousel v-model="afaSlide" animated arrows swipeable navigation infinite style="border-radius: 6px">
-                      <q-carousel-slide :name="1" img-src="農糧署1.png" />
-                      <q-carousel-slide :name="2" img-src="農糧署2.png" />
-                      <q-carousel-slide :name="3" img-src="農糧署3.png" />
-                      <q-carousel-slide :name="4" img-src="農糧署4.png" />
+                      <q-carousel-slide :name="1" img-src="img/農糧署1.png" />
+                      <q-carousel-slide :name="2" img-src="img/農糧署2.png" />
+                      <q-carousel-slide :name="3" img-src="img/農糧署3.png" />
+                      <q-carousel-slide :name="4" img-src="img/農糧署4.png" />
                     </q-carousel>
                   </q-card-section>
                 </div>
@@ -426,7 +426,7 @@
           <q-card>
             <q-card-section horizontal v-if="nfaVideo">
               <video style="width: 100%; height: 100%" autoplay loop muted>
-                <source type="video/mp4" src="消防署.mp4">
+                <source type="video/mp4" src="video/消防署.mp4">
               </video>
             </q-card-section>
             <q-card-section horizontal v-else>
@@ -434,10 +434,10 @@
                 <div class="col-xs-12 col-md-5">
                   <q-card-section class="q-pa-none">
                     <q-carousel v-model="nfaSlide" animated arrows swipeable navigation infinite style="border-radius: 6px">
-                      <q-carousel-slide :name="1" img-src="消防署1.png" />
-                      <q-carousel-slide :name="2" img-src="消防署2.png" />
-                      <q-carousel-slide :name="3" img-src="消防署3.png" />
-                      <q-carousel-slide :name="4" img-src="消防署4.png" />
+                      <q-carousel-slide :name="1" img-src="img/消防署1.png" />
+                      <q-carousel-slide :name="2" img-src="img/消防署2.png" />
+                      <q-carousel-slide :name="3" img-src="img/消防署3.png" />
+                      <q-carousel-slide :name="4" img-src="img/消防署4.png" />
                     </q-carousel>
                   </q-card-section>
                 </div>
@@ -560,7 +560,7 @@
         <q-list>
           <q-item class="q-pa-lg" clickable @click="clickHref('https://github.com/masatora', '_blank')">
             <q-item-section side>
-              <q-icon name="img:github.png" color="blue-grey-5" size="xl" />
+              <q-icon name="img:img/github.png" color="blue-grey-5" size="xl" />
             </q-item-section>
             <q-item-section class="text-body1">Github: https://github.com/masatora</q-item-section>
           </q-item>
