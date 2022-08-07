@@ -38,11 +38,17 @@
               <div class="col-xs-12 col-md-6 flex justify-center" style="height: 34vmin">
                 <img src="img/github-logo.png" style="max-width: 100%; max-height: 100%" />
               </div>
-              <div class="col-xs-12 col-md-6">
-                <p class="text-body1 text-white">我對前端及後端均有濃厚興趣，也有扎實的開發歷練，從事全端開發工作已有近10年的經驗，專案的規劃設計、開發、部署及維運皆能獨力完成，並以全端工程師做為職涯方向。</p>
-                <p class="text-body1 text-white">透過自學掌握前端技術 HTML、Javascript / JQuery、CSS及切版技巧，設計出基於使用者角度思考的 UI/UX；後端方面技術則包含 PHP、MySQL 資料庫操作、SQL 查詢最佳化及效能調校。</p>
-                <p class="text-body1 text-white">在不同的工作歷練下也逐漸掌握了 Python、RESTful API、Vue、PostgreSQL、Web GIS 等各項技術，為業主服務也獲得優良評價，如內政部消防署、新北市水利局及水源特定區管理局等。</p>
-                <p class="text-body1 text-white">我喜歡學習各式框架與生態系，應用不同的技術來面對不斷變化的產業趨勢，我也樂於分享自己的開發經驗給予團隊，希望能以這份熱忱來鼓舞團隊並且一起成長!!</p>
+              <div class="col-xs-12 col-md-6 gt-xs text-body1">
+                <p class="text-white">我對前端及後端均有濃厚興趣，也有扎實的開發歷練，從事全端開發工作已有近10年的經驗，專案的規劃設計、開發、部署及維運皆能獨力完成，並以全端工程師做為職涯方向。</p>
+                <p class="text-white">透過自學掌握前端技術 HTML、Javascript / JQuery、CSS及切版技巧，設計出基於使用者角度思考的 UI/UX；後端方面技術則包含 PHP、MySQL 資料庫操作、SQL 查詢最佳化及效能調校。</p>
+                <p class="text-white">在不同的工作歷練下也逐漸掌握了 Python、RESTful API、Vue、PostgreSQL、Web GIS 等各項技術，為業主服務也獲得優良評價，如內政部消防署、新北市水利局及水源特定區管理局等。</p>
+                <p class="text-white">我喜歡學習各式框架與生態系，應用不同的技術來面對不斷變化的產業趨勢，我也樂於分享自己的開發經驗給予團隊，希望能以這份熱忱來鼓舞團隊並且一起成長!!</p>
+              </div>
+              <div class="col-xs-12 col-md-6 lt-sm text-body2">
+                <p class="text-white">我對前端及後端均有濃厚興趣，也有扎實的開發歷練，從事全端開發工作已有近10年的經驗，專案的規劃設計、開發、部署及維運皆能獨力完成，並以全端工程師做為職涯方向。</p>
+                <p class="text-white">透過自學掌握前端技術 HTML、Javascript / JQuery、CSS及切版技巧，設計出基於使用者角度思考的 UI/UX；後端方面技術則包含 PHP、MySQL 資料庫操作、SQL 查詢最佳化及效能調校。</p>
+                <p class="text-white">在不同的工作歷練下也逐漸掌握了 Python、RESTful API、Vue、PostgreSQL、Web GIS 等各項技術，為業主服務也獲得優良評價，如內政部消防署、新北市水利局及水源特定區管理局等。</p>
+                <p class="text-white">我喜歡學習各式框架與生態系，應用不同的技術來面對不斷變化的產業趨勢，我也樂於分享自己的開發經驗給予團隊，希望能以這份熱忱來鼓舞團隊並且一起成長!!</p>
               </div>
             </div>
           </div>
