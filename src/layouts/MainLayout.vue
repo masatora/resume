@@ -66,11 +66,11 @@
               <q-card-section class="q-pb-none">
                 <q-list class="text-body1 text-grey" dense>
                   <q-item-label class="text-h6 text-center q-my-sm text-orange-9">Front - End</q-item-label>
-                  <q-item>Vue.js / Quasar</q-item>
+                  <q-item>Vue.js / Quasar / Vuex / Pinia</q-item>
                   <q-item>Cesium / leaflet</q-item>
                   <q-item>Javascript / JQuery / Ramda</q-item>
                   <q-item>CSS3 / SASS / Stylus</q-item>
-                  <q-item>Windicss / Bootstrap</q-item>
+                  <q-item>WindiCSS / Bootstrap</q-item>
                   <q-item>HTML5 / SPA / SSR / RWD</q-item>
                 </q-list>
               </q-card-section>
@@ -360,7 +360,7 @@
                       <q-item class="text-bold">專案說明：</q-item>
                       <q-item>減少球場雇用人力、自駕車自動化接送</q-item>
                       <q-item>．負責前後端圖台的程式設計、資料庫設計、 UI/UX 操作介面設計、MQTT Broker 及 WebSocket 串接並與合作廠商討論規格</q-item>
-                      <q-item>．前端：ES6、Vue / Quasar、Stylus、Websocket</q-item>
+                      <q-item>．前端：ES6、Vue / Quasar、Vuex、Cesium、Stylus、Highcharts、Websocket</q-item>
                       <q-item>．後端：Python / Flask、PostgreSQL、PostGIS、MQTT、Websocket、Ubuntu</q-item>
                       <q-item class="text-bold">專案特色：</q-item>
                       <q-item>．MQTT + WS 雙向溝通接收車機訊號，實現車輛定位與即時影像監控</q-item>
@@ -396,6 +396,7 @@
                       <q-carousel-slide :name="2" img-src="img/農糧署2.png" />
                       <q-carousel-slide :name="3" img-src="img/農糧署3.png" />
                       <q-carousel-slide :name="4" img-src="img/農糧署4.png" />
+                      <q-carousel-slide :name="5" img-src="img/農糧署5.png" />
                     </q-carousel>
                   </q-card-section>
                 </div>
@@ -478,6 +479,55 @@
               </q-btn>
             </q-card-actions>
           </q-card>
+          <q-card>
+            <q-card-section horizontal v-if="nfaVideo">
+              <video style="width: 100%; height: 100%" autoplay loop muted>
+                <source type="video/mp4" src="video/農業局.mp4">
+              </video>
+            </q-card-section>
+            <q-card-section horizontal v-else>
+              <div class="row" style="width: 100%">
+                <div class="col-xs-12 col-md-5">
+                  <q-card-section class="q-pa-none">
+                    <q-carousel v-model="nfaSlide" animated arrows swipeable navigation infinite style="border-radius: 6px">
+                      <q-carousel-slide :name="1" img-src="img/農業局1.png" />
+                      <q-carousel-slide :name="2" img-src="img/農業局2.png" />
+                      <q-carousel-slide :name="3" img-src="img/農業局3.png" />
+                      <q-carousel-slide :name="4" img-src="img/農業局4.png" />
+                      <q-carousel-slide :name="5" img-src="img/農業局5.png" />
+                      <q-carousel-slide :name="6" img-src="img/農業局6.png" />
+                    </q-carousel>
+                  </q-card-section>
+                </div>
+                <div class="col-xs-12 col-md-7">
+                  <q-card-section>
+                    <q-list dense class="text-body1">
+                      <q-badge class="absolute absolute-top-right text-body2 bg-primary" label="開發中" />
+                      <q-item class="text-h6 text-bold flex justify-center">新北市水土保持申請書件線上無紙化審查及管理系統</q-item>
+                      <q-separator class="q-my-xs" />
+                      <q-item class="text-bold">專案說明：</q-item>
+                      <q-item>配合國家發展委員會電子化政府計畫，建立水土保持案件之管理、表單填寫及案件資料分析之功能</q-item>
+                      <q-item>．負責前後端程式設計、資料庫設計、 UI/UX 操作介面設計、簽核系統開發、資料電子化流程、應用程式虛擬化</q-item>
+                      <q-item>．前端：ES6、Vue3 / Quasar、Pinia、SASS、WindiCSS、Cesium、Highcharts</q-item>
+                      <q-item>．後端：Python / Sanic、JWT、PostgreSQL、Nginx</q-item>
+                      <q-item>．DevOps：docker、Drone CI</q-item>
+                      <q-item class="text-bold">專案特色：</q-item>
+                      <q-item>．採用 Pinia 做為 vue3 做狀態管理工具，使開發易於維護且語法更為簡潔。</q-item>
+                      <q-item>．CSS 框架採用 WindiCSS 以便於 UI/UX 設計、layout 等開發。</q-item>
+                      <q-item>．採用 Sanic 後端框架，以提供響應時間更快速的 API 服務。</q-item>
+                      <q-item>．應用程式使用 docker 做虛擬化，並利用 Drone CI 搭配 github 製作出易於部署的線上環境。</q-item>
+                    </q-list>
+                  </q-card-section>
+                </div>
+              </div>
+            </q-card-section>
+            <q-separator />
+            <q-card-actions class="flex justify-end q-gutter-md">
+              <q-btn color="blue-grey-5" flat round icon="movie" @click="nfaVideo = !nfaVideo">
+                <q-tooltip>農業局 DEMO</q-tooltip>
+              </q-btn>
+            </q-card-actions>
+          </q-card>
         </div>
       </div>
     </div>
@@ -505,8 +555,8 @@
               <q-item>3．高爾夫球場自駕車派遣系統</q-item>
               <q-item>4．農糧署農田判釋工作平台</q-item>
               <q-item>5．內政部消防署消防與救災數據分析系統平台</q-item>
-              <q-item>6．新北市水土保持申請書件線上無紙化審查及管理系統</q-item>
-              <q-item>7．巨量遙測空間數據AI分析雲端服務平台</q-item>
+              <q-item>6．巨量遙測空間數據AI分析雲端服務平台</q-item>
+              <q-item>7．新北市水土保持申請書件線上無紙化審查及管理系統</q-item>
               <q-item-label class="text-bold q-py-sm">競賽成果</q-item-label>
               <q-item>1．2019 亞洲資料創新應用大擂台賽：臺灣研發獎勵獎</q-item>
               <q-item>2．2020 亞洲資料創新應用大擂台賽：Taiwan區最佳人氣獎第三名</q-item>
