@@ -474,13 +474,13 @@
               <q-btn color="blue-grey-5" flat round icon="movie" @click="nfaVideo = !nfaVideo">
                 <q-tooltip>消防署 DEMO</q-tooltip>
               </q-btn>
-              <q-btn color="blue-grey-5" flat round icon="public" @click="openLink('https://nfadw.emic.gov.tw/')">
+              <!-- <q-btn color="blue-grey-5" flat round icon="public" @click="openLink('https://nfadw.emic.gov.tw/')">
                 <q-tooltip>開啟網頁</q-tooltip>
-              </q-btn>
+              </q-btn> -->
             </q-card-actions>
           </q-card>
           <q-card>
-            <q-card-section horizontal v-if="nfaVideo">
+            <q-card-section horizontal v-if="swcbVideo">
               <video style="width: 100%; height: 100%" autoplay loop muted>
                 <source type="video/mp4" src="video/農業局.mp4">
               </video>
@@ -489,7 +489,7 @@
               <div class="row" style="width: 100%">
                 <div class="col-xs-12 col-md-5">
                   <q-card-section class="q-pa-none">
-                    <q-carousel v-model="nfaSlide" animated arrows swipeable navigation infinite style="border-radius: 6px">
+                    <q-carousel v-model="swcbSlide" animated arrows swipeable navigation infinite style="border-radius: 6px">
                       <q-carousel-slide :name="1" img-src="img/農業局1.png" />
                       <q-carousel-slide :name="2" img-src="img/農業局2.png" />
                       <q-carousel-slide :name="3" img-src="img/農業局3.png" />
@@ -523,7 +523,7 @@
             </q-card-section>
             <q-separator />
             <q-card-actions class="flex justify-end q-gutter-md">
-              <q-btn color="blue-grey-5" flat round icon="movie" @click="nfaVideo = !nfaVideo">
+              <q-btn color="blue-grey-5" flat round icon="movie" @click="swcbVideo = !swcbVideo">
                 <q-tooltip>農業局 DEMO</q-tooltip>
               </q-btn>
             </q-card-actions>
@@ -695,12 +695,14 @@ export default defineComponent({
       golfSlide: ref(1),
       afaSlide: ref(1),
       nfaSlide: ref(1),
+      swcbSlide: ref(1),
       wrsVideo: ref(false),
       wratbVideo1: ref(false),
       wratbVideo2: ref(false),
       golfVideo: ref(false),
       afaVideo: ref(false),
       nfaVideo: ref(false),
+      swcbVideo: ref(false),
       frontEndExpanded: ref(false),
       backEndExpanded: ref(false),
       databaseExpanded: ref(false),
