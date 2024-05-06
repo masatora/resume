@@ -538,8 +538,24 @@
         <h3 class="text-bold text-center">EXPERIENCE</h3>
         <q-timeline color="secondary">
           <q-timeline-entry
+            title="晶睿通訊股份有限公司"
+            subtitle="2023-05 ~ 2024-04"
+            icon="psychology"
+          >
+            <q-list dense class="text-body1">
+              <q-item-label class="text-bold q-py-sm">職稱</q-item-label>
+              <q-item>資深研發工程師</q-item>
+              <q-item-label class="text-bold q-py-sm">工作內容</q-item-label>
+              <q-item>1．產線產品( camera / NVR )測試程式開發，以 python 進行開發待測物的測試項目。</q-item>
+              <q-item>2．團隊開發執行 scrum 流程。</q-item>
+              <q-item>3．程式開發後留下 confluence 文件。</q-item>
+              <q-item-label class="text-bold q-py-sm">專案開發</q-item-label>
+              <q-item>1．開發新版產品測試程式，以 flet 開發 windows 應用程式，以應用於產線環境操作</q-item>
+            </q-list>
+          </q-timeline-entry>
+          <q-timeline-entry
             title="興創知能股份有限公司"
-            subtitle="2019-05 ~ 至今"
+            subtitle="2019-05 ~ 2023-05"
             icon="psychology"
           >
             <q-list dense class="text-body1">
