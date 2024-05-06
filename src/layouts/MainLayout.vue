@@ -540,7 +540,7 @@
           <q-timeline-entry
             title="晶睿通訊股份有限公司"
             subtitle="2023-05 ~ 2024-04"
-            icon="psychology"
+            icon="videocam"
           >
             <q-list dense class="text-body1">
               <q-item-label class="text-bold q-py-sm">職稱</q-item-label>
